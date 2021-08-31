@@ -4,7 +4,7 @@ author: "Author"
 date: "DATE"
 output: 
   html_document:
-     css: /tst/styles.css
+     css: https://github.com/abelovgit/tst/styles.css
      self_contained: no
 
 ---
