@@ -151,7 +151,6 @@ NOTES:
       <div>
          Navigate to IntelliJ IDEA run config:
          ![image](https://user-images.githubusercontent.com/89839322/131587909-464d89bd-149d-44f1-9501-2749ee1d16a3.png)
-       
         Set VM options:     
          ```
          -Djava.library.path=./lib/native
