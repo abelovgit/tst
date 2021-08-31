@@ -165,7 +165,30 @@ NOTES:
       </div>
    </div> 
  
+   <div id="step4_build">
+      <a href="#step4_build" style="color: black;"> <b> Step 4 - Build </b> </a>
+      <div>
+       Build the application by running:
+        ```
+        ./build.sh
+        ```
+       Tap into the application by running it via GUI
+       ![image](https://user-images.githubusercontent.com/89839322/131589340-c2705e13-6a40-44d7-bf9d-4839b079d185.png)
+       and navigating to https://localhost:8080
+       You should be able to see the following screen
+       ![image](https://user-images.githubusercontent.com/89839322/131589729-d19d00ec-2c96-4a98-8e16-254952c8454d.png)
+       At this point, Mongo DB is empty and should be restored from PRD that is why your ETPA credentials will not work.
+        [Previous](#databases) | [Back to contents](#table-of-contents)     
+      </div>
+   </div> 
  
+   <div id="step1_maven">
+      <a href="#step1_maven" style="color: black;"> <b> Step 1 - Maven </b> </a>
+      <div>
+       In the local repository, run `./lib/install.sh` in order to install a missing dependency.
+        [Previous](#databases) | [Back to contents](#table-of-contents)     
+      </div>
+   </div> 
 
 
 </div>
