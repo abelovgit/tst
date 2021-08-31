@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="https://abelovgit.github.io/styles.css">
