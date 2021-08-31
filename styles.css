@@ -1,9 +1,9 @@
 body {
-  background-color: powderblue;
+  background-color: lightblue;
 }
+
 h1 {
-  color: blue;
+  color: navy;
+  margin-left: 20px;
 }
-p {
-  color: red;
-}
+
