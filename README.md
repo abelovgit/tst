@@ -1,3 +1,5 @@
+{::options parse_block_html="true" /}
+
 # idcons rulezzzz
 
 # Table of contents
@@ -35,6 +37,7 @@
 <summary markdown="span">## Repository Structure</summary>
 
 [To contents](#table-of-contents)
+ 
 </details>
 
 <hr>
@@ -53,6 +56,7 @@ NOTES:
 * OTP can be generated at https://totp.danhersam.com/
 * 
 [Previous](#repository-structure) | [To contents](#table-of-contents)
+ 
 </details>
 
 <hr>
