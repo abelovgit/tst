@@ -29,9 +29,11 @@
 * [How to update OR-tools](#how-to-update-or-tools)
 * [How to analyse event handling performance](#how-to-analyse-event-handling-performance)
 
+<div markdown="span"> 
 <details>
-<summary> <div markdown="span"> ## Repository Structure </div></summary>
+<summary> ## Repository Structure </summary>
 
 [To contents](#table-of-contents)
 
 </details>
+</div>
