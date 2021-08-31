@@ -116,11 +116,7 @@ NOTES:
 </div>
 
 
-<h1>Example Six</h1>
-<p>Grade: A</p>
-<p>This is the winner so far. It is infinitely expandable (no selectors specific to panels) and the markup is pretty clean.
-Possible issues: cross-browser line height issues possibly not making perfect layout, links are placed right above each
-div instead of a in central list at the top.</p>
+
 <div class="w3c">
 <div id="tab16">
    <a href="#tab16" style="color: black;"> <b> Step 1 - Maven </b> </a>
@@ -139,8 +135,22 @@ div instead of a in central list at the top.</p>
 </div>
  
 <div id="tab17">
-<a href="#tab17">Tab 17</a>
-<div>... 30 lines of CSS is rather a lot, and...</div>
+   <a href="#tab17">Step 2 - Mongo DB</a>
+   <div>
+      To mimic a Mongo DB cluster locally:
+    
+      <div markdown="1">
+
+        * Download Vagrant and Virtualbox for your OS
+        * Run `deployment/vagrant/recreate.sh` 
+        * If not yet the case, add `Include config.d/*` as the FIRST line of ~/.ssh/config
+        * Use Ansible to populate the VMs using `deployment/ansible/run.sh vagrant`
+        * Run `vagrant status` inside the `vagrant` folder to retrieve hostnames, then connect to one of the instances using for example: `ssh idcons-db1`
+
+      </div>
+
+      To use existing VMs instead of recreating altogether (much faster after the first time), use `vagrant up` or just keep them running
+   </div>
 </div>
  
 <div id="tab18">
