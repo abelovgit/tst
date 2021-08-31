@@ -44,7 +44,7 @@
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div id="environments" class="tab-content" markdown="1">
-<details>
+<details markdown="1">
 <summary> <b> Environments </b> </summary>
  
 | Environment | Branches        | Links                                                                                                                              |
@@ -65,7 +65,7 @@ NOTES:
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div id="databases" class="tab-content" markdown="1">
-<details>
+<details markdown="1">
 <summary> <b> Databases </b> </summary>
 
 | Environment | SSH Tunnel                                                                       | Links                                                                |
@@ -88,12 +88,12 @@ NOTES:
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div id="running-locally" class="tab-content" markdown="1">
-<details>
+<details markdown="1">
 <summary> <b> Running locally </b> </summary> 
 
-<div class="w3c">
-   <div id="tab16">
-     <a href="#tab16">Step I</a>
+<div class="w3c" markdown="1">
+   <div id="tab16" markdown="1">
+     <a href="#tab16">Step 1</a>
      <div markdown="1">
      <p> Maven </p>
        Before building with Maven you need to add the missing dependency to the local repository:
@@ -103,14 +103,37 @@ NOTES:
      </div>
    </div>
 
-   <div id="tab17">
-     <a href="#tab17">Tab 17</a>
-     <div>... 30 lines of CSS is rather a lot, and...</div>
+   <div id="tab17" markdown="1">
+     <a href="#tab17">Step 2</a>
+     <div markdown="1">
+         You can mimic cluster setup for mongo etc locally by using vagrant and virtualbox, Steps needed are:
+         * Download Vagrant and Virtualbox for your OS
+         * Run `deployment/vagrant/recreate.sh` 
+         * If not yet the case, add `Include config.d/*` as the FIRST line of ~/.ssh/config
+         * Use Ansible to populate the VMs using `deployment/ansible/run.sh vagrant`
+         * Run `vagrant status` inside the `vagrant` folder to retrieve hostnames, then connect to one of the instances using for example: `ssh idcons-db1`
+
+         To use existing VMs instead of recreating altogether (much faster after the first time), use `vagrant up` or just keep them running
+     </div>
    </div>
 
-   <div id="tab18">
-     <a href="#tab18">Tab 18</a>
-     <div>... that 2 should have been enough, but...</div>
+   <div id="tab18" markdown="1">
+     <a href="#tab18">Step 3</a>
+     <div markdown="1">
+        Add VM options in intellij run config:
+        ```
+        -Djava.library.path=./lib/native
+        ```
+        Add the following to the active profiles intellij run config:
+        ```
+        dev
+        ```
+
+        ##### Command Line
+        ```
+        ./build.sh && ./run
+        ```
+     </div>
    </div>
  
 </div>
