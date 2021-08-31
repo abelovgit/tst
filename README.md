@@ -32,34 +32,6 @@
 <a href="#" onclick="alert(this)">Click Me</a>
 
 <details>
-<summary markdown="span">
-
-## Repository Structure
+<summary markdown="span"> ## Repository Structure 
 
 </summary>
-
-[To contents](#table-of-contents)
-
-</details>
-
-<hr>
-
-<details>
-<summary>
-
-##Environments
-</summary>
-
-| Environment | Branches        | Links                                                                                                                               |
-|-------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Test        | any (manual)    | [APP](https://tst.idcons.nl),[LOGS](https://tst.idcons.nl:5601),[METRICS](https://tst.idcons.nl:3000/)                              |
-| Acceptance  | master (manual) | [APP](https://acc.idcons.nl),[LOGS](https://acc-monitoring.idcons.nl:5601),[METRICS](https://acc-monitoring.idcons.nl:3000/)        |
-| Production  | master (manual) | [APP](https://idcons.nl),[LOGS](https://monitoring.idcons.nl:5601),[METRICS](https://monitoring.idcons.nl:3000/)                    |
- 
-NOTES: 
-* Credentials can be found on https://pwsafe.trifork.nl
-* OTP can be generated at https://totp.danhersam.com/
-* 
-[Previous](#repository-structure) | [To contents](#table-of-contents)
-
-</details>
