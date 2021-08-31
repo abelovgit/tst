@@ -91,7 +91,7 @@ NOTES:
 <details open markdown="1">
 <summary> <b> Running locally </b> </summary> 
  
-<div class="tabbed-area adjacent" markdown="1">
+<!-- <div class="tabbed-area adjacent" markdown="1">
    <div id="box-thirteen" markdown="1">
    
       #### Maven
@@ -109,23 +109,26 @@ NOTES:
     <li><a href="#box-thirteen">Step 1</a></li>
    <li><a href="#box-fourteen">Step 2</a></li>
    </ul>
-</div>
+</div> -->
  
 
-<!-- <div class="w3c" markdown="span">
-   <div id="tab16" markdown="span">
-     <a href="#tab16">Step 1</a>
-     <div markdown="span">
+<div class="w3c" markdown="1">
+   <div id="tab16" markdown="1">
+     <a href="#tab16" markdown="1">Step 1</a>
+     <div markdown="1">
+     
       #### Maven
+      
        Before building with Maven you need to add the missing dependency to the local repository:
        ```
        ./lib/install.sh
        ```
+       
      </div>
    </div>
 
    <div id="tab17" markdown="1">
-     <a href="#tab17">Step 2</a>
+     <a href="#tab17" markdown="1">Step 2</a>
      <div markdown="1">
          <h4> Using Vagrant </h4>     
          You can mimic cluster setup for mongo etc locally by using vagrant and virtualbox, Steps needed are:
@@ -140,7 +143,7 @@ NOTES:
      </div>
    </div>
 
-</div> -->
+</div>
 
 </details>
 
