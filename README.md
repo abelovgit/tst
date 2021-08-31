@@ -93,6 +93,7 @@ NOTES:
  
 <div class="tabbed-area adjacent" markdown="1">
    <div id="box-thirteen" markdown="1">
+   
       #### Maven
        Before building with Maven you need to add the missing dependency to the local repository:
        ```
