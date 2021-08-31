@@ -1,10 +1,6 @@
 body {
-  background-color: lightblue;
-}
-
-h1 {
-  color: navy;
-  margin-left: 20px;
+  background-color: black;
+  color: white;
 }
 
 .tab-content {
@@ -22,26 +18,3 @@ h1 {
 .w3c > div > div { background: white; z-index: -2; left: 0; top: 30px; bottom: 0; right: 0; padding: 20px; border: 1px solid #ccc; }	
 .w3c > div:not(:target) > div { position: absolute }
 .w3c > div:target > div { position: absolute; z-index: -1; }
-
-        /* Stuff for example seven */
-.adjacent { position: relative; margin-top: 50px; min-height: 300px; }
-.adjacent div { border: 1px solid #ccc; background: white; padding: 20px; min-height: 250px; position: absolute; top: -1px; left: 0; width: 100%; }
-.adjacent .tabs { position: absolute; bottom: 100%; left: 0; z-index: 2; }
-.adjacent .tabs li a { background: -moz-linear-gradient(top, white, #eee); }
-#box-thirteen:target,
-#box-fourteen:target,
-#box-fifteen:target { z-index: 1; }
-#box-thirteen:target ~ .tabs a[href='#box-thirteen'],
-#box-fourteen:target ~ .tabs a[href='#box-fourteen'],
-#box-fifteen:target ~ .tabs a[href='#box-fifteen'] { background: white; border-bottom: 1px solid white; }
-
-        /* Stuff for example three */
-        
-        .cur-nav-fix-2 .tabs li a { background: -moz-linear-gradient(top, white, #eee); }
-        .cur-nav-fix-2 .tabs { z-index: 2; position: relative; }
-        #box-seven:target .box-seven,
-        #box-eight:target .box-eight,
-        #box-nine:target .box-nine { z-index: 1; }
-        #box-seven:target a[href="#box-seven"],
-        #box-eight:target a[href="#box-eight"],
-        #box-nine:target a[href="#box-nine"] { border-bottom: 1px solid white; background: white; }
