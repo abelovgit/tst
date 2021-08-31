@@ -137,12 +137,15 @@ NOTES:
       <a href="#tab2" style="color: black;"> <b> Step 2 - Mongo DB </b> </a>
       <div id="tab2-1">
          Setup Mongo DB cluster locally:
+       
+       <span>
           
            * Download Vagrant and Virtualbox for your OS
            * Run `deployment/vagrant/recreate.sh` 
            * If not yet the case, add `Include config.d/*` as the FIRST line of ~/.ssh/config
            * Use Ansible to populate the VMs using `deployment/ansible/run.sh vagrant`
            * Run `vagrant status` inside the `vagrant` folder to retrieve hostnames, then connect to one of the instances using for example: `ssh idcons-db1`
+       </span>
 
            To use existing VMs instead of recreating altogether (much faster after the first time), use `vagrant up` or just keep them running
        
