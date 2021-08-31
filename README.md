@@ -59,6 +59,8 @@ NOTES:
 
 [Previous](#repository-structure) | [Back to contents](#table-of-contents)
 
+</details>
+
 </div>
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -74,17 +76,25 @@ NOTES:
     ```
     ./lib/install.sh
     ```
- </div>
+  </div>
 </div>
+ 
 <div id="tab17">
   <a href="#tab17">Tab 17</a>
   <div>... 30 lines of CSS is rather a lot, and...</div>
 </div>
+ 
 <div id="tab18">
   <a href="#tab18">Tab 18</a>
   <div>... that 2 should have been enough, but...</div>
 </div>
+ 
 </div>
+
+</details>
+
 </div>
+
+
 
 
