@@ -121,10 +121,7 @@ NOTES:
    <div id="tab1">
       <a href="#tab1" style="color: black;"> <b> Step 1 - Maven </b> </a>
       <div>
-       In the local repository, run
-       
-        ```./lib/install.sh```
-       in order to install a missing dependency.
+       In the local repository, run `./lib/install.sh` in order to install a missing dependency.
         [Previous](#databases) | [Back to contents](#table-of-contents)     
       </div>
     
