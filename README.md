@@ -1,7 +1,7 @@
-{::options parse_block_html="true" /}
 # idcons rulezzzz
 
 # Table of contents
+* [Repository Structure](#repository)
 * [Environments](#environments)
 * [Databases](#databases)
 * [Running locally](#running-locally)
@@ -29,9 +29,14 @@
 * [How to update OR-tools](#how-to-update-or-tools)
 * [How to analyse event handling performance](#how-to-analyse-event-handling-performance)
 
+<details>
+<summary><b>Repository Structure</b></summary>
+
+[To contents](#table-of-contents)
+</details>
 
 <details>
- <summary markdown="span"><h3>Environments</h3></summary>
+<summary>##Environments {#environments}</summary>
 
 | Environment | Branches        | Links                                                                                                                               |
 |-------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -43,5 +48,5 @@ NOTES:
 * Credentials can be found on https://pwsafe.trifork.nl
 * OTP can be generated at https://totp.danhersam.com/
 * 
-[To contents](#table-of-contents)
+[Previous](#repository-structure) | [To contents](#table-of-contents)
 </details>
