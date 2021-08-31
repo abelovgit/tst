@@ -141,7 +141,7 @@ NOTES:
        <ol>
            <li> Download Vagrant and Virtualbox for your OS </li>
            <li> Run `deployment/vagrant/recreate.sh` </li>
-           <li> If not yet the case, add `Include config.d/*` as the FIRST line of ~/.ssh/config </li>
+           <li> If not yet the case, add `Include config.d/*` as the FIRST line into ~/.ssh/config </li>
            <li> Run `deployment/ansible/run.sh vagrant` to populate the VMs </li>
            <li> Run `vagrant status` inside the `vagrant` folder to retrieve hostnames </li>
        </ol>
