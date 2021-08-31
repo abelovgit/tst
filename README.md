@@ -29,7 +29,7 @@
 * [How to update OR-tools](#how-to-update-or-tools)
 * [How to analyse event handling performance](#how-to-analyse-event-handling-performance)
 
-<a href="#" onclick="alert(this)">Click Me</a>
+<a href="" onclick="alert(this)">Click Me</a>
 
 <details>
 <summary><b>Repository Structure</b></summary>
