@@ -32,25 +32,20 @@
 * [How to analyse event handling performance](#how-to-analyse-event-handling-performance)
 
 
-<!-- <ul id="menu">
-    <li><a href="#tab1">First tab</a></li>
-    <li><a href="#tab2">Second tab</a></li>
-    <li><a href="#tab3">Third tab</a></li>
-</ul> -->
-
-<div id="repository-structure" class="tab-content">
+<div id="repository-structure" class="tab-content" markdown="1">
 <details>
-<summary><b>Repository Structure</b></summary>
+<summary> <b> Repository Structure </b> </summary>
 
-[To contents](#table-of-contents)
+[Back to contents](#table-of-contents)
 
 </details>
 
 </div>
 
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div id="environments" class="tab-content" markdown="1">
- 
-<h3> Environments </h3>
+<details>
+<summary> <b> Environments </b> </summary>
  
 | Environment | Branches        | Links                                                                                                                              |
 |-------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -62,30 +57,34 @@ NOTES:
 * Credentials can be found on [](https://pwsafe.trifork.nl)
 * OTP can be generated at [](https://totp.danhersam.com/)
 
-[Previous](#repository-structure) | [To contents](#table-of-contents)
+[Previous](#repository-structure) | [Back to contents](#table-of-contents)
 
 </div>
 
-<div id="tab3" class="tab-content">Content of third tab</div>
-
-<h1>Example Six</h1>
-<p>Grade: A</p>
-<p>This is the winner so far. It is infinitely expandable (no selectors specific to panels) and the markup is pretty clean.
-Possible issues: cross-browser line height issues possibly not making perfect layout, links are placed right above each
-div instead of a in central list at the top.</p>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div id="running-localy" class="tab-content" markdown="1">
+<details>
+<summary> <b> Running locally </b> </summary> 
 <div class="w3c">
 <div id="tab16">
-<a href="#tab16">Tab 16</a>
-<div>One might well argue, that...</div>
+  <a href="#tab16">Step I</a>
+  <div>
+  <p> Maven </p>
+    Before building with Maven you need to add the missing dependency to the local repository:
+    ```
+    ./lib/install.sh
+    ```
+ </div>
 </div>
 <div id="tab17">
-<a href="#tab17">Tab 17</a>
-<div>... 30 lines of CSS is rather a lot, and...</div>
+  <a href="#tab17">Tab 17</a>
+  <div>... 30 lines of CSS is rather a lot, and...</div>
 </div>
 <div id="tab18">
-<a href="#tab18">Tab 18</a>
-<div>... that 2 should have been enough, but...</div>
+  <a href="#tab18">Tab 18</a>
+  <div>... that 2 should have been enough, but...</div>
 </div>
 </div>
 </div>
-</div>
+
+
