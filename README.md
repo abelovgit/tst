@@ -135,7 +135,7 @@ NOTES:
 </div>
  
 <div id="tab17">
-   <a href="#tab17">Step 2 - Mongo DB</a>
+   <a href="#tab17" style="color: black;"> <b> Step 2 - Mongo DB </b> </a>
    <div>
       To mimic a Mongo DB cluster locally:
     
