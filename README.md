@@ -118,17 +118,16 @@ NOTES:
 
 
 <div class="w3c">
-   <div id="tab1">
-      <a href="#tab1" style="color: black;"> <b> Step 1 - Maven </b> </a>
+   <div id="step1_maven">
+      <a href="#step1_maven" style="color: black;"> <b> Step 1 - Maven </b> </a>
       <div>
        In the local repository, run `./lib/install.sh` in order to install a missing dependency.
         [Previous](#databases) | [Back to contents](#table-of-contents)     
       </div>
-    
    </div>
 
-   <div id="tab2">
-      <a href="#tab2" style="color: black;"> <b> Step 2 - Mongo DB </b> </a>
+   <div id="step2_mongo">
+      <a href="#step2_mongo" style="color: black;"> <b> Step 2 - Mongo DB </b> </a>
       <div>
          Setup VMs for Mongo DB cluster locally:     
        <ol>
@@ -143,11 +142,35 @@ NOTES:
            <li> To check that VMs are installed properly, connect to one of them using for example: `ssh idcons-db1` </li>
            <li> Use `vagrant up` to turn on the installed VMs. </li>
        </ul> 
-       [Previous](#tab1) | [Back to contents](#table-of-contents)  
+       [Previous](#step1_maven) | [Back to contents](#table-of-contents)  
       </div>
-    
    </div>
  
+   <div id="step3_idea">
+      <a href="#step3_idea" style="color: black;"> <b> Step 3 - IntelliJ IDEA </b> </a>
+      <div>
+         Navigate to IntelliJ IDEA run config
+       
+       ![image](https://user-images.githubusercontent.com/89839322/131587909-464d89bd-149d-44f1-9501-2749ee1d16a3.png)
+       
+        Set VM options:     
+ 
+         ```
+         -Djava.library.path=./lib/native
+         ```
+         Set the following to the active profiles:
+         ```
+         dev
+         ```
+       as shown in 
+       ![image](https://user-images.githubusercontent.com/89839322/131588402-545653c0-d79d-491e-8423-c4506a9aa324.png)
+      
+        [Previous](#databases) | [Back to contents](#table-of-contents)     
+      </div>
+   </div> 
+ 
+ 
+
 
 </div>
 
