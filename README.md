@@ -52,7 +52,7 @@ NOTES:
 * Credentials can be found on https://pwsafe.trifork.nl
 * Establish the SSH tunnel before attempting to visit the prescribed ports on localhost
 
-:fish: [Previous](#environments) | [To contents](#table-of-contents)
+[Previous](:arrow_left: #environments) | [To contents](:arrow_up: #table-of-contents)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
