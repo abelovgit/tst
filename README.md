@@ -120,10 +120,10 @@ NOTES:
 <div class="w3c">
    <div id="tab1">
       <a href="#tab1" style="color: black;"> <b> Step 1 - Maven </b> </a>
-      <div id="tab1">
+      <div id="tab1-1">
         Before building with Maven you need to add the missing dependency to the local repository:
 
-          <div>
+          <div id="tab1-2">
 
              ```
              ./lib/install.sh
