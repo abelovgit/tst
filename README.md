@@ -95,7 +95,7 @@ NOTES:
    <div id="tab16" markdown="1">
      <a href="#tab16">Step 1</a>
      <div markdown="1">
-     <p> Maven </p>
+     <h4> Maven </h4>
        Before building with Maven you need to add the missing dependency to the local repository:
        ```
        ./lib/install.sh
@@ -106,6 +106,7 @@ NOTES:
    <div id="tab17" markdown="1">
      <a href="#tab17">Step 2</a>
      <div markdown="1">
+         <h4> Using Vagrant </h4>     
          You can mimic cluster setup for mongo etc locally by using vagrant and virtualbox, Steps needed are:
          * Download Vagrant and Virtualbox for your OS
          * Run `deployment/vagrant/recreate.sh` 
@@ -120,6 +121,7 @@ NOTES:
    <div id="tab18" markdown="1">
      <a href="#tab18">Step 3</a>
      <div markdown="1">
+        <h4> IDEA </h4>
         Add VM options in intellij run config:
         ```
         -Djava.library.path=./lib/native
