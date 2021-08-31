@@ -64,30 +64,54 @@ NOTES:
 </div>
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div id="running-localy" class="tab-content" markdown="1">
+<div id="databases" class="tab-content" markdown="1">
+<details>
+<summary> <b> Databases </b> </summary>
+
+| Environment | SSH Tunnel                                                                       | Links                                                                |
+|-------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| Test        | `ssh -L 8443:localhost:8443 -L 8081:localhost:8081 sysadmin@tst.idcons.nl`       | [MONGODB](https://localhost:8081/),[AXONDB](https://localhost:8443/) |
+| Acceptance  | `ssh -L 8443:localhost:8443 -L 8081:localhost:8081 sysadmin@acc-db01.idcons.nl`  | [MONGODB](https://localhost:8081/),[AXONDB](https://localhost:8443/) |  
+| Production  | `ssh -L 8443:localhost:8443 -L 8081:localhost:8081 sysadmin@db01.idcons.nl`      | [MONGODB](https://localhost:8081/),[AXONDB](https://localhost:8443/) |
+
+For Mongo Acceptance, set up the tunnel, go to the link and use user 'idcons_ro' 
+
+NOTES: 
+* Credentials can be found on https://pwsafe.trifork.nl
+* Establish the SSH tunnel before attempting to visit the prescribed ports on localhost
+
+[Previous](#environments) | [Back to contents](#table-of-contents)
+
+</details>
+
+</div>
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div id="running-locally" class="tab-content" markdown="1">
 <details>
 <summary> <b> Running locally </b> </summary> 
+
 <div class="w3c">
-<div id="tab16">
-  <a href="#tab16">Step I</a>
-  <div markdown="1">
-  <p> Maven </p>
-    Before building with Maven you need to add the missing dependency to the local repository:
-    ```
-    ./lib/install.sh
-    ```
-  </div>
-</div>
- 
-<div id="tab17">
-  <a href="#tab17">Tab 17</a>
-  <div>... 30 lines of CSS is rather a lot, and...</div>
-</div>
- 
-<div id="tab18">
-  <a href="#tab18">Tab 18</a>
-  <div>... that 2 should have been enough, but...</div>
-</div>
+   <div id="tab16">
+     <a href="#tab16">Step I</a>
+     <div markdown="1">
+     <p> Maven </p>
+       Before building with Maven you need to add the missing dependency to the local repository:
+       ```
+       ./lib/install.sh
+       ```
+     </div>
+   </div>
+
+   <div id="tab17">
+     <a href="#tab17">Tab 17</a>
+     <div>... 30 lines of CSS is rather a lot, and...</div>
+   </div>
+
+   <div id="tab18">
+     <a href="#tab18">Tab 18</a>
+     <div>... that 2 should have been enough, but...</div>
+   </div>
  
 </div>
 
