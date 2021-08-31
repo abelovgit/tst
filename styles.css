@@ -7,3 +7,9 @@ h1 {
   margin-left: 20px;
 }
 
+.tab-content {
+    display: none;
+}
+.tab-content:target {
+    display: block;
+}
