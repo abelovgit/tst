@@ -87,9 +87,9 @@ NOTES:
 </div>
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div id="running-locally" class="tab-content" markdown="1">
-<details markdown="1">
-<summary> <b> Running locally </b> </summary> 
+<div id="running-locally" class="tab-content" markdown="span">
+<details>
+<summary markdown="span"> <b> Running locally </b> </summary> 
 
 <div class="w3c" markdown="1">
    <div id="tab16" markdown="1">
@@ -103,9 +103,9 @@ NOTES:
      </div>
    </div>
 
-   <div id="tab17" markdown="1">
+   <div id="tab17" markdown="span">
      <a href="#tab17">Step 2</a>
-     <div markdown="1">
+     <div markdown="span">
          You can mimic cluster setup for mongo etc locally by using vagrant and virtualbox, Steps needed are:
          * Download Vagrant and Virtualbox for your OS
          * Run `deployment/vagrant/recreate.sh` 
@@ -117,9 +117,9 @@ NOTES:
      </div>
    </div>
 
-   <div id="tab18" markdown="1">
+   <div id="tab18" markdown="span">
      <a href="#tab18">Step 3</a>
-     <div markdown="1">
+     <div markdown="span">
         Add VM options in intellij run config:
         ```
         -Djava.library.path=./lib/native
