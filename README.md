@@ -89,13 +89,13 @@ NOTES:
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div id="running-locally" class="tab-content" markdown="1">
 <details open markdown="1">
-<summary markdown="span"> <b> Running locally </b> </summary> 
+<summary> <b> Running locally </b> </summary> 
 
 <div class="w3c" markdown="1">
    <div id="tab16" markdown="1">
      <a href="#tab16">Step 1</a>
      <div markdown="1">
-     <h4> Maven </h4>
+      #### Maven
        Before building with Maven you need to add the missing dependency to the local repository:
        ```
        ./lib/install.sh
