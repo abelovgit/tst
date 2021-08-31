@@ -49,14 +49,13 @@
 </div>
 
 <div id="environments" class="tab-content">
-<details>
-<summary markdown="span"> <b> Environments </b> </summary>
-
-| Environment | Branches        | Links                                                                                                                               |
+<h3> Environments </h3>
+ 
+| Environment | Branches        | Links                                                                                                                              |
 |-------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Test        | any (manual)    | [APP](https://tst.idcons.nl),[LOGS](https://tst.idcons.nl:5601),[METRICS](https://tst.idcons.nl:3000/)                              |
 | Acceptance  | master (manual) | [APP](https://acc.idcons.nl),[LOGS](https://acc-monitoring.idcons.nl:5601),[METRICS](https://acc-monitoring.idcons.nl:3000/)        |
-| Production  | master (manual) | [APP](https://idcons.nl),[LOGS](https://monitoring.idcons.nl:5601),[METRICS](https://monitoring.idcons.nl:3000/)                    |
+| Production  | master (manual) | [APP](https://idcons.nl),[LOGS](https://monitoring.idcons.nl:5601),[METRICS](https://monitoring.idcons.nl:3000/) 
  
 NOTES: 
 * Credentials can be found on https://pwsafe.trifork.nl
