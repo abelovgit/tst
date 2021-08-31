@@ -30,7 +30,7 @@
 
 
 <details>
-<summary><h3>Environments</h3></summary>
+<summary style="display: block;font-size: 1.17em;margin-top: 1em;margin-bottom: 1em;margin-left: 0;margin-right: 0;font-weight: bold;">Environments</summary>
 
 | Environment | Branches        | Links                                                                                                                               |
 |-------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -43,23 +43,4 @@ NOTES:
 * OTP can be generated at https://totp.danhersam.com/
 * 
 [To contents](#table-of-contents)
-</details>
-
-<details>
-<summary><h3>DATABASES</h3></summary>
-
-| Environment | SSH Tunnel                                                                       | Links                                                                |
-|-------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| Test        | `ssh -L 8443:localhost:8443 -L 8081:localhost:8081 sysadmin@tst.idcons.nl`       | [MONGODB](https://localhost:8081/),[AXONDB](https://localhost:8443/) |
-| Acceptance  | `ssh -L 8443:localhost:8443 -L 8081:localhost:8081 sysadmin@acc-db01.idcons.nl`  | [MONGODB](https://localhost:8081/),[AXONDB](https://localhost:8443/) |  
-| Production  | `ssh -L 8443:localhost:8443 -L 8081:localhost:8081 sysadmin@db01.idcons.nl`      | [MONGODB](https://localhost:8081/),[AXONDB](https://localhost:8443/) |
-
-For Mongo Acceptance, set up the tunnel, go to the link and use user 'idcons_ro' 
-
-NOTES: 
-* Credentials can be found on https://pwsafe.trifork.nl
-* Establish the SSH tunnel before attempting to visit the prescribed ports on localhost
-
-[Previous](#environments) | [To contents](#table-of-contents)
-
 </details>
