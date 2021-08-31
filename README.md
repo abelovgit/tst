@@ -1,7 +1,12 @@
-<link rel="stylesheet" type="text/css" href="https://abelovgit.github.io/styles.css">
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="https://abelovgit.github.io/styles.css">
+</head>
+<body>
 
-    <body>
-        <h1>Hello World</h1>
-        <p>I'm under construction!</p>
-    </body>
-    
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
