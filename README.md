@@ -123,8 +123,16 @@ Possible issues: cross-browser line height issues possibly not making perfect la
 div instead of a in central list at the top.</p>
 <div class="w3c">
 <div id="tab16">
-<a href="#tab16">Tab 16</a>
-<div>One might well argue, that...</div>
+   <a href="#tab16" >Step 1</a>
+   <h4> Maven </h4>
+   <div markdown="1">
+
+     Before building with Maven you need to add the missing dependency to the local repository:
+     ```
+     ./lib/install.sh
+     ```
+
+   </div>
 </div>
  
 <div id="tab17">
