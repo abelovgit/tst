@@ -32,11 +32,39 @@
 * [How to analyse event handling performance](#how-to-analyse-event-handling-performance)
 
 
-<ul id="menu">
+<!-- <ul id="menu">
     <li><a href="#tab1">First tab</a></li>
     <li><a href="#tab2">Second tab</a></li>
     <li><a href="#tab3">Third tab</a></li>
-</ul>
-<div id="tab1" class="tab-content">Content of first tab</div>
-<div id="tab2" class="tab-content">Content of second tab</div>
+</ul> -->
+
+<div id="repository-structure" class="tab-content">
+<details>
+<summary><b>Repository Structure</b></summary>
+
+[To contents](#table-of-contents)
+
+</details>
+
+</div>
+
+<div id="environments" class="tab-content">
+<details>
+<summary><b>Environments</b></summary>
+
+| Environment | Branches        | Links                                                                                                                               |
+|-------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Test        | any (manual)    | [APP](https://tst.idcons.nl),[LOGS](https://tst.idcons.nl:5601),[METRICS](https://tst.idcons.nl:3000/)                              |
+| Acceptance  | master (manual) | [APP](https://acc.idcons.nl),[LOGS](https://acc-monitoring.idcons.nl:5601),[METRICS](https://acc-monitoring.idcons.nl:3000/)        |
+| Production  | master (manual) | [APP](https://idcons.nl),[LOGS](https://monitoring.idcons.nl:5601),[METRICS](https://monitoring.idcons.nl:3000/)                    |
+ 
+NOTES: 
+* Credentials can be found on https://pwsafe.trifork.nl
+* OTP can be generated at https://totp.danhersam.com/
+* 
+[Previous](#repository-structure) | [To contents](#table-of-contents)
+
+</details>
+</div>
+
 <div id="tab3" class="tab-content">Content of third tab</div>
