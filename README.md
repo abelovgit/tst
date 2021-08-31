@@ -30,7 +30,7 @@
 
 
 <details>
-<summary style="font-weight:bold;color:green;">Environments</summary>
+ <summary style="font-weight:bold;color:green;"><b>Environments</b></summary>
 
 | Environment | Branches        | Links                                                                                                                               |
 |-------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------|
