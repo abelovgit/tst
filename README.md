@@ -121,9 +121,12 @@ NOTES:
    <div id="tab1">
       <a href="#tab1" style="color: black;"> <b> Step 1 - Maven </b> </a>
       <div id="tab1-1">
-        Before building with Maven you need to add the missing dependency to the local repository:
+       
+       In the local repository, run
        
         ```./lib/install.sh```
+       
+       in order to install a missing dependency.
        
         [Previous](#databases) | [Back to contents](#table-of-contents)
        
@@ -133,7 +136,7 @@ NOTES:
    <div id="tab2">
       <a href="#tab2" style="color: black;"> <b> Step 2 - Mongo DB </b> </a>
       <div id="tab2-1">
-         To mimic a Mongo DB cluster locally:
+         Setup Mongo DB cluster locally:
 
            * Download Vagrant and Virtualbox for your OS
            * Run `deployment/vagrant/recreate.sh` 
