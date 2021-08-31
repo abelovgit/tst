@@ -49,6 +49,7 @@
 </div>
 
 <div id="environments" class="tab-content">
+ 
 <h3> Environments </h3>
  
 | Environment | Branches        | Links                                                                                                                              |
@@ -63,7 +64,6 @@ NOTES:
 
 [Previous](#repository-structure) | [To contents](#table-of-contents)
 
-</details>
 </div>
 
 <div id="tab3" class="tab-content">Content of third tab</div>
