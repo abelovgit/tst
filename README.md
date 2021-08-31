@@ -87,8 +87,8 @@ NOTES:
 </div>
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div id="running-locally" class="tab-content" markdown="1">
-<details open markdown="1">
+<div id="running-locally" class="tab-content">
+<details open>
 <summary> <b> Running locally </b> </summary> 
  
 <!-- <div class="tabbed-area adjacent" markdown="1">
@@ -112,9 +112,9 @@ NOTES:
 </div> -->
  
 
-<div class="w3c" markdown="1">
-   <div id="tab16" markdown="1">
-     <a href="#tab16" markdown="1">Step 1</a>
+<div class="w3c">
+   <div id="tab16">
+     <a href="#tab16">Step 1</a>
      <div markdown="1">
      
       #### Maven
@@ -127,8 +127,8 @@ NOTES:
      </div>
    </div>
 
-   <div id="tab17" markdown="1">
-     <a href="#tab17" markdown="1">Step 2</a>
+   <div id="tab17">
+     <a href="#tab17">Step 2</a>
      <div markdown="1">
      
          #### Using Vagrant  
@@ -140,10 +140,8 @@ NOTES:
          * Use Ansible to populate the VMs using `deployment/ansible/run.sh vagrant`
          * Run `vagrant status` inside the `vagrant` folder to retrieve hostnames, then connect to one of the instances using for example: `ssh idcons-db1`
          
-         <div markdown="1">
-         
-            To use existing VMs instead of recreating altogether (much faster after the first time), use `vagrant up` or just keep them running
-            
+         <div>
+            To use existing VMs instead of recreating altogether (much faster after the first time), use `vagrant up` or just keep them running  
          </div>
          
      </div>
