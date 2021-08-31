@@ -124,7 +124,6 @@ NOTES:
        In the local repository, run
        
         ```./lib/install.sh```
-       
        in order to install a missing dependency.
         [Previous](#databases) | [Back to contents](#table-of-contents)     
       </div>
