@@ -134,5 +134,26 @@ NOTES:
 </div>
 
 
+<h1>Example Six</h1>
+<p>Grade: A</p>
+<p>This is the winner so far. It is infinitely expandable (no selectors specific to panels) and the markup is pretty clean.
+Possible issues: cross-browser line height issues possibly not making perfect layout, links are placed right above each
+div instead of a in central list at the top.</p>
+<div class="w3c">
+<div id="tab16">
+<a href="#tab16">Tab 16</a>
+<div>One might well argue, that...</div>
+</div>
+<div id="tab17">
+<a href="#tab17">Tab 17</a>
+<div>... 30 lines of CSS is rather a lot, and...</div>
+</div>
+<div id="tab18">
+<a href="#tab18">Tab 18</a>
+<div>... that 2 should have been enough, but...</div>
+</div>
+</div>
+
+
 
 
