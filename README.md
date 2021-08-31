@@ -1,3 +1,4 @@
+{::options parse_block_html="true" /}
 # idcons rulezzzz
 
 # Table of contents
@@ -30,7 +31,7 @@
 
 
 <details>
-<summary style="font-weight: bold;">Environments</summary>
+ <summary markdown="span"><h3>Environments</h3></summary>
 
 | Environment | Branches        | Links                                                                                                                               |
 |-------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------|
