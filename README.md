@@ -68,7 +68,7 @@ NOTES:
 <div class="w3c">
 <div id="tab16">
   <a href="#tab16">Step I</a>
-  <div>
+  <div markdown="1">
   <p> Maven </p>
     Before building with Maven you need to add the missing dependency to the local repository:
     ```
