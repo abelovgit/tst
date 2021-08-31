@@ -122,7 +122,11 @@ NOTES:
       <a href="#tab1" style="color: black;"> <b> Step 1 - Maven </b> </a>
       <div id="tab1-1">
         Before building with Maven you need to add the missing dependency to the local repository:
-        <div id="tab1-2"> ```./lib/install.sh``` </div>
+       
+        ```./lib/install.sh```
+       
+        [Previous](#databases) | [Back to contents](#table-of-contents)
+       
       </div>
    </div>
 
@@ -138,6 +142,9 @@ NOTES:
            * Run `vagrant status` inside the `vagrant` folder to retrieve hostnames, then connect to one of the instances using for example: `ssh idcons-db1`
 
          To use existing VMs instead of recreating altogether (much faster after the first time), use `vagrant up` or just keep them running
+       
+         [Previous](#tab1) | [Back to contents](#table-of-contents)
+       
       </div>
    </div>
  
