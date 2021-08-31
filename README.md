@@ -1,9 +1,11 @@
+<style>
 .tab-content {
     display: none;
 }
 .tab-content:target {
     display: block;
 }
+</style>    
 
 <ul id="menu">
     <li><a href="#tab1">First tab</a></li>
