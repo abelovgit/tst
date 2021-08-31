@@ -32,7 +32,7 @@
 <a href="#" onclick="alert(this)">Click Me</a>
 
 <details>
-<summary markdown="span"> 
+<summary markdown="1"> 
 ## Repository Structure
 </summary>
 
