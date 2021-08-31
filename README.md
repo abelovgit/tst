@@ -123,7 +123,7 @@ NOTES:
    <div>
      Before building with Maven you need to add the missing dependency to the local repository:
     
-       <div markdown="1">
+       <div>
 
           ```
           ./lib/install.sh
@@ -139,7 +139,7 @@ NOTES:
    <div>
       To mimic a Mongo DB cluster locally:
     
-      <div markdown="1">
+      <div>
 
         * Download Vagrant and Virtualbox for your OS
         * Run `deployment/vagrant/recreate.sh` 
