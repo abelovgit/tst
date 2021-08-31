@@ -30,7 +30,7 @@
 * [How to analyse event handling performance](#how-to-analyse-event-handling-performance)
 
 <details>
-<summary> <div markdown="1"> ## Repository Structure </div> </summary>
+<summary> <div markdown="span"> ## Repository Structure </div></summary>
 
 [To contents](#table-of-contents)
 
