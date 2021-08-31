@@ -1,4 +1,13 @@
-(setq markdown-css-paths '("https://github.com/abelovgit/tst/styles.css"))
+---
+title: "Title"
+author: "Author"
+date: "DATE"
+output: 
+  html_document:
+     css: styles.css
+     self_contained: no
+
+---
 
 <ul id="menu">
     <li><a href="#tab1">First tab</a></li>
