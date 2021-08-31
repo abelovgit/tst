@@ -132,7 +132,7 @@ NOTES:
         dev
         ```
 
-        ##### Command Line
+        Command Line
         ```
         ./build.sh && ./run
         ```
