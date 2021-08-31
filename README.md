@@ -1,4 +1,4 @@
-(setq markdown-css-paths '("https://github.com/abelovgit/tst/style.css"))
+(setq markdown-css-paths '("https://github.com/abelovgit/tst/styles.css"))
 
 <h2>It is a simple tabs model. Only CSS.<br/>Without js, bugs, position-absolute.</h2><br/>
 
