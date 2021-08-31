@@ -87,14 +87,14 @@ NOTES:
 </div>
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div id="running-locally" class="tab-content" markdown="1">
-<details open markdown="1">
+<div id="running-locally" class="tab-content" markdown="span">
+<details open markdown="span">
 <summary> <b> Running locally </b> </summary> 
 
-<div class="w3c" markdown="1">
-   <div id="tab16" markdown="1">
+<div class="w3c" markdown="span">
+   <div id="tab16" markdown="span">
      <a href="#tab16">Step 1</a>
-     <div markdown="1">
+     <div markdown="span">
       #### Maven
        Before building with Maven you need to add the missing dependency to the local repository:
        ```
@@ -119,26 +119,6 @@ NOTES:
      </div>
    </div>
 
-   <div id="tab18" markdown="1">
-     <a href="#tab18">Step 3</a>
-     <div markdown="1">
-        <h4> IDEA </h4>
-        Add VM options in intellij run config:
-        ```
-        -Djava.library.path=./lib/native
-        ```
-        Add the following to the active profiles intellij run config:
-        ```
-        dev
-        ```
-
-        Command Line
-        ```
-        ./build.sh && ./run
-        ```
-     </div>
-   </div>
- 
 </div>
 
 </details>
