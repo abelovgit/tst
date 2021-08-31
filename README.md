@@ -29,12 +29,8 @@
 * [How to update OR-tools](#how-to-update-or-tools)
 * [How to analyse event handling performance](#how-to-analyse-event-handling-performance)
 
-<a href="#" onclick="alert(this)">Click Me</a>
-
 <details>
-<summary markdown="1"> 
-## Repository Structure
-</summary>
+<summary> <div markdown="1"> ## Repository Structure </div> </summary>
 
 [To contents](#table-of-contents)
 
