@@ -2,14 +2,12 @@
 
 <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'tab1')">Contents</button>
-  <button class="tablinks" onclick="openCity(event, 'tab2')">Text</button>
+  <button class="tablinks" onclick="openCity(event, 'tab1')">tab1</button>
+  <button class="tablinks" onclick="openCity(event, 'tab2')">tab2</button>
 </div>
 
 <!-- Tab content -->
 <div id="tab1" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
 
 # Table of contents
 * [Environments](#environments)
