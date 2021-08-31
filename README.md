@@ -30,7 +30,7 @@
 
 
 <details>
-<summary><h3 class="code-line">Environments</h3></summary>
+<summary><h3>Environments</h3></summary>
 
 | Environment | Branches        | Links                                                                                                                               |
 |-------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------|
