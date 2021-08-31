@@ -124,13 +124,15 @@ div instead of a in central list at the top.</p>
 <div class="w3c">
 <div id="tab16">
    <a href="#tab16" style="color: black;"> <b> Step 1 - Maven </b> </a>
-   <div markdown="span">
-    
+   <div>
      Before building with Maven you need to add the missing dependency to the local repository:
-     ```
-     ./lib/install.sh
-     ```
+     <div markdown="span">
 
+        ```
+        ./lib/install.sh
+        ```
+      
+    </div>
    </div>
 </div>
  
