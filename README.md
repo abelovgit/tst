@@ -140,7 +140,7 @@ NOTES:
        </ol>
           Note: 
        <ul>
-           <li> To check that Mongo DB installed properly, connect to one of the instances using for example: `ssh idcons-db1` </li>
+           <li> To check that Mongo DB installed properly, connect to one of the VMs using for example: `ssh idcons-db1` </li>
            <li> To use existing VMs instead of recreating altogether (much faster after the first time), use `vagrant up` or just keep them running </li>
        </ul> 
        [Previous](#tab1) | [Back to contents](#table-of-contents)  
