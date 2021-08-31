@@ -1,3 +1,9 @@
-{::options parse_block_html="true" /}
+<div class="panel panel-info">
+**Note**
+{: .panel-heading}
+<div class="panel-body">
 
-<p>Then an HTML tag with crazy **markup** _all over_ the place!</p>
+NOTE DESCRIPTION
+
+</div>
+</div>
