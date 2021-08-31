@@ -111,24 +111,6 @@ NOTES:
    </ul>
 </div> -->
  
-
-<div class="w3c">
-   <div id="tab16">
-     <a href="#tab16">Step 1</a>
-     <div markdown="1">
-     
-      #### Maven
-      
-       Before building with Maven you need to add the missing dependency to the local repository:
-       ```
-       ./lib/install.sh
-       ```
-       
-     </div>
-   </div>
- 
-</div>
-
 </details>
 
 </div>
@@ -144,10 +126,12 @@ div instead of a in central list at the top.</p>
 <a href="#tab16">Tab 16</a>
 <div>One might well argue, that...</div>
 </div>
+ 
 <div id="tab17">
 <a href="#tab17">Tab 17</a>
 <div>... 30 lines of CSS is rather a lot, and...</div>
 </div>
+ 
 <div id="tab18">
 <a href="#tab18">Tab 18</a>
 <div>... that 2 should have been enough, but...</div>
