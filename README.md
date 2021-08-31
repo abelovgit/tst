@@ -121,15 +121,12 @@ NOTES:
    <div id="tab1">
       <a href="#tab1" style="color: black;"> <b> Step 1 - Maven </b> </a>
       <div>
-       
        In the local repository, run
        
         ```./lib/install.sh```
        
        in order to install a missing dependency.
-       
-        [Previous](#databases) | [Back to contents](#table-of-contents)
-       
+        [Previous](#databases) | [Back to contents](#table-of-contents)     
       </div>
     
    </div>
@@ -150,8 +147,7 @@ NOTES:
            <li> To check that Mongo DB installed properly, connect to one of the instances using for example: `ssh idcons-db1` </li>
            <li> To use existing VMs instead of recreating altogether (much faster after the first time), use `vagrant up` or just keep them running </li>
        </ul> 
-       [Previous](#tab1) | [Back to contents](#table-of-contents)
-       
+       [Previous](#tab1) | [Back to contents](#table-of-contents)  
       </div>
     
    </div>
