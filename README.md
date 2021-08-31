@@ -32,9 +32,7 @@
 <a href="#" onclick="alert(this)">Click Me</a>
 
 <details>
-<summary markdown="span">
-
-## Repository Structure</summary>
+<summary markdown="span">## Repository Structure</summary>
 
 [To contents](#table-of-contents)
 </details>
@@ -42,10 +40,7 @@
 <hr>
 
 <details>
-<summary markdown="span">
-
-##Environments
-</summary>
+<summary markdown="span">##Environments</summary>
 
 | Environment | Branches        | Links                                                                                                                               |
 |-------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -63,9 +58,7 @@ NOTES:
 <hr>
 
 <details>
-<summary markdown="span">
-##  DATABASES {#databases}
-</summary>
+<summary markdown="span">##DATABASES</summary>
 
 | Environment | SSH Tunnel                                                                       | Links                                                                |
 |-------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------|
