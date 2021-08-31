@@ -149,12 +149,10 @@ NOTES:
    <div id="step3_idea">
       <a href="#step3_idea" style="color: black;"> <b> Step 3 - IntelliJ IDEA </b> </a>
       <div>
-         Navigate to IntelliJ IDEA run config
-       
-       ![image](https://user-images.githubusercontent.com/89839322/131587909-464d89bd-149d-44f1-9501-2749ee1d16a3.png)
+         Navigate to IntelliJ IDEA run config:
+         ![image](https://user-images.githubusercontent.com/89839322/131587909-464d89bd-149d-44f1-9501-2749ee1d16a3.png)
        
         Set VM options:     
- 
          ```
          -Djava.library.path=./lib/native
          ```
@@ -164,7 +162,6 @@ NOTES:
          ```
        as shown in 
        ![image](https://user-images.githubusercontent.com/89839322/131588402-545653c0-d79d-491e-8423-c4506a9aa324.png)
-      
         [Previous](#databases) | [Back to contents](#table-of-contents)     
       </div>
    </div> 
