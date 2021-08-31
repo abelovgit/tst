@@ -31,6 +31,15 @@
 
 <a href="" onclick="alert(this)">Click Me</a>
 
+<a href="#" id="click_me">Click Me</a>
+<script type="text/javascript">
+document.getElementById('click_me').addEventListener("click", function(event) {
+    (function(event) {
+        alert(this);
+    }).call(document.getElementById('click_me'), event);
+});
+</script>
+
 <details>
 <summary><b>Repository Structure</b></summary>
 
