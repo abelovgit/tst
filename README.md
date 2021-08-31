@@ -33,7 +33,7 @@
 
 
 <div id="repository-structure" class="tab-content" markdown="1">
-<details>
+<details open markdown="1">
 <summary> <b> Repository Structure </b> </summary>
 
 [Back to contents](#table-of-contents)
@@ -44,7 +44,7 @@
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div id="environments" class="tab-content" markdown="1">
-<details markdown="1">
+<details open markdown="1">
 <summary> <b> Environments </b> </summary>
  
 | Environment | Branches        | Links                                                                                                                              |
@@ -65,7 +65,7 @@ NOTES:
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div id="databases" class="tab-content" markdown="1">
-<details markdown="1">
+<details open markdown="1">
 <summary> <b> Databases </b> </summary>
 
 | Environment | SSH Tunnel                                                                       | Links                                                                |
@@ -87,8 +87,8 @@ NOTES:
 </div>
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div id="running-locally" class="tab-content" markdown="span">
-<details>
+<div id="running-locally" class="tab-content" markdown="1">
+<details open markdown="1">
 <summary markdown="span"> <b> Running locally </b> </summary> 
 
 <div class="w3c" markdown="1">
@@ -103,9 +103,9 @@ NOTES:
      </div>
    </div>
 
-   <div id="tab17" markdown="span">
+   <div id="tab17" markdown="1">
      <a href="#tab17">Step 2</a>
-     <div markdown="span">
+     <div markdown="1">
          You can mimic cluster setup for mongo etc locally by using vagrant and virtualbox, Steps needed are:
          * Download Vagrant and Virtualbox for your OS
          * Run `deployment/vagrant/recreate.sh` 
@@ -117,9 +117,9 @@ NOTES:
      </div>
    </div>
 
-   <div id="tab18" markdown="span">
+   <div id="tab18" markdown="1">
      <a href="#tab18">Step 3</a>
-     <div markdown="span">
+     <div markdown="1">
         Add VM options in intellij run config:
         ```
         -Djava.library.path=./lib/native
