@@ -50,7 +50,7 @@
 
 <div id="environments" class="tab-content">
 <details>
-<summary><b>Environments</b></summary>
+<summary markdown="span"> <b> Environments </b> </summary>
 
 | Environment | Branches        | Links                                                                                                                               |
 |-------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -61,7 +61,7 @@
 NOTES: 
 * Credentials can be found on https://pwsafe.trifork.nl
 * OTP can be generated at https://totp.danhersam.com/
-* 
+
 [Previous](#repository-structure) | [To contents](#table-of-contents)
 
 </details>
