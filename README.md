@@ -124,9 +124,8 @@ div instead of a in central list at the top.</p>
 <div class="w3c">
 <div id="tab16">
    <a href="#tab16" >Step 1</a>
-   <h4> Maven </h4>
    <div markdown="1">
-
+     <h4> Maven </h4>
      Before building with Maven you need to add the missing dependency to the local repository:
      ```
      ./lib/install.sh
@@ -145,34 +144,4 @@ div instead of a in central list at the top.</p>
 <div>... that 2 should have been enough, but...</div>
 </div>
 </div>
-
-
-<h1>Example Three</h1>
-<p>Grade: B</p>
-<p>This has current navigation highlighting. The only downside is that it requires as
-many wrapping divs as there are panels.</p>
-<div id="box-seven"><div id="box-eight"><div id="box-nine">
-<div class="tabbed-area cur-nav-fix-2">
-<ul class="tabs group">
-<li><a href="#box-seven">Tab 7</a></li>
-<li><a href="#box-eight">Tab 8</a></li>
-<li><a href="#box-nine">Tab 9</a></li>
-</ul>
-<div class="box-wrap">
-<div class="box-seven">
-<ul>
-<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-<li>Aliquam tincidunt mauris eu risus.</li>
-<li>Vestibulum auctor dapibus neque.</li>
-</ul>
-</div>
-<div class="box-eight">
-<p>Feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-</div>
-<div class="box-nine">
-<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-</div>
-</div>
-</div>
-</div></div></div>
 
