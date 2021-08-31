@@ -1,5 +1,13 @@
 # idcons rulezzzz
 
+<style>
+mark{
+    color:red;
+}
+</style>
+
+<mark>what is DataBase</mark>
+
 <!-- Tab links -->
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'tab1')">tab1</button>
