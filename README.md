@@ -120,7 +120,7 @@ NOTES:
 <div class="w3c">
    <div id="tab1">
       <a href="#tab1" style="color: black;"> <b> Step 1 - Maven </b> </a>
-      <div id="tab1-1">
+      <div>
        
        In the local repository, run
        
@@ -136,9 +136,8 @@ NOTES:
 
    <div id="tab2">
       <a href="#tab2" style="color: black;"> <b> Step 2 - Mongo DB </b> </a>
-      <div id="tab2-1">
-         Setup Mongo DB cluster locally:
-       
+      <div>
+         Setup Mongo DB cluster locally:     
        <ol>
            <li> Download Vagrant and Virtualbox for your OS </li>
            <li> Run `deployment/vagrant/recreate.sh` </li>
@@ -146,7 +145,6 @@ NOTES:
            <li> Run `deployment/ansible/run.sh vagrant` to populate the VMs </li>
            <li> Run `vagrant status` inside the `vagrant` folder to retrieve hostnames </li>
        </ol>
-
           Note: 
        <ul>
            <li> To check that Mongo DB installed properly, connect to one of the instances using for example: `ssh idcons-db1` </li>
