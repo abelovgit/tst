@@ -114,10 +114,9 @@ NOTES:
 </div>
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
- 
-<p id="running-locally"> <b> Running locally </b> </p>
+<div id="running-locally" markdown="1"> 
 
-<div markdown="1">
+### Running locally
 
     <details id="step1_maven" open>
     <summary markdown="1"> <b> Step 1 - Maven </b> </summary> 
