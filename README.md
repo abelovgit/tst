@@ -174,21 +174,39 @@ NOTES:
         ```
        Tap into the application by running it via GUI
        ![image](https://user-images.githubusercontent.com/89839322/131589340-c2705e13-6a40-44d7-bf9d-4839b079d185.png)
-       and navigating to https://localhost:8080
+       and by navigating to `https://localhost:8080`.
        You should be able to see the following screen
        ![image](https://user-images.githubusercontent.com/89839322/131589729-d19d00ec-2c96-4a98-8e16-254952c8454d.png)
-       At this point, Mongo DB is empty and should be restored from PRD that is why your ETPA credentials will not work.
+       At this point, Mongo DB is empty and should be restored from PRD. Stop the application in IDEA by clicking "stop" button.
         [Previous](#databases) | [Back to contents](#table-of-contents)     
       </div>
    </div> 
  
-   <div id="step1_maven">
-      <a href="#step1_maven" style="color: black;"> <b> Step 1 - Maven </b> </a>
+   <div id="step5_copy_db">
+      <a href="#step5_copy_db" style="color: black;"> <b> Step 5 - Copy DB </b> </a>
       <div>
-       In the local repository, run `./lib/install.sh` in order to install a missing dependency.
-        [Previous](#databases) | [Back to contents](#table-of-contents)     
+      <ol>
+       <li> Run `./docker/axon-restore/get_backup_prod.sh` in order to copy DB (PROD) to local drive.</li>
+       <li> Execute `./docker/axon-restore/restore_backup.sh` and follow the provided instructions.</li>   
+       <li> Launch `./docker/replay.sh' to replay AxonDB events locally.</li>
+       <li> Trigger './docker/admin_disable_2fa.sh' to reset 2FA in order to be able to reset admin password.</li>
+       </ol>
+        [Previous](#databases) | [Back to contents](#table-of-contents)         
       </div>
    </div> 
+ 
+   <div id="step6_docker">
+      <a href="#step6_docker" style="color: black;"> <b> Step 6 - Docker </b> </a>
+      <div>
+      <ol>
+       <li> Run `./docker/run.sh wo` to start the container.</li>
+       <li> Tap into the application again at `https://localhost:8080` to reset the password for 'admin' user.</li>   
+       <li> After reseting the admin password, login to IDCONS admin dashboard and create a new user (or change the password of existing one).</li>  
+       <li> You should be able to login under the desired user now.</li>  
+       </ol>
+        [Previous](#databases) | [Back to contents](#table-of-contents)         
+      </div>
+   </div>  
 
 
 </div>
