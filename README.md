@@ -51,9 +51,8 @@ Important elements of the repository are explained bellow:
 |--client-api  --> classes for communication with trading platform(s)
 |--common      --> libraries shared by multiple projects
 |--deployment  --> tools and configs for local deployment of the application
-|--docker      
-|  |--axon-restore --> scripts for copying AxonDB and its local restoration 
-|  |--axondb       --> 
+|--docker      --> scripts for running docker containers, replay of AxonDB events, etc.
+|  |--axon-restore --> scripts for copying AxonDB and its local restoration  
 |
 |--docs        --> documentation
 |--etpa-client --> classes specific for ETPA trading platform 
@@ -61,6 +60,8 @@ Important elements of the repository are explained bellow:
 |--lib         --> package with `oortools` optimization solver
 
 </pre>
+  
+For detailed documentation about the environment refer to [Confluence page](https://gopacs.atlassian.net/wiki/home).
 
 [Back to contents](#table-of-contents)
 
@@ -113,67 +114,44 @@ NOTES:
 </div>
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<!-- <div id="running-locally" class="tab-content"> -->
-<!-- <details open>
-<summary> <b> Running locally </b> </summary>  -->
-  
-  <p> <b> Running locally </b> </p>
  
-<!-- <div class="tabbed-area adjacent" markdown="1">
-   <div id="box-thirteen" markdown="1">
-   
-      #### Maven
-       Before building with Maven you need to add the missing dependency to the local repository:
-       ```
-       ./lib/install.sh
-       ```
-   </div>
- 
-   <div id="box-fourteen" markdown="1">
-   <p>Feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-   </div>
- 
-   <ul class="tabs group">
-    <li><a href="#box-thirteen">Step 1</a></li>
-   <li><a href="#box-fourteen">Step 2</a></li>
-   </ul>
-</div> -->
- 
+<p id="running-locally"> <b> Running locally </b> </p>
 
-<div class="w3c">
-   <div id="step1_maven">
-      <a href="#step1_maven" style="color: black;"> <b> Step 1 - Maven </b> </a>
-      <div>
-       In the local repository, run `./lib/install.sh` in order to install a missing dependency.
-        [Previous](#databases) | [Back to contents](#table-of-contents)     
-      </div>
-   </div>
+    <details id="step1_maven" open>
+    <summary> <b> Step 1 - Maven </b> </summary> 
 
-   <div id="step2_mongo">
-      <a href="#step2_mongo" style="color: black;"> <b> Step 2 - Mongo DB </b> </a>
-      <div>
+        In the local repository, run `./lib/install.sh` in order to install a missing dependency.
+
+        [Previous](#databases) | [Back to contents](#table-of-contents)   
+
+    </details>  
+
+    <details id="step2_mongo" open>
+    <summary> <b> Step 2 - Setup Mongo DB </b> </summary>    
+
          Setup VMs for Mongo DB cluster locally:     
-       <ol>
-           <li> Download Vagrant and Virtualbox for your OS </li>
-           <li> Run `deployment/vagrant/recreate.sh` </li>
-           <li> If not yet the case, add `Include config.d/*` as the FIRST line into ~/.ssh/config </li>
-           <li> Run `deployment/ansible/run.sh vagrant` to populate the VMs </li>
-           <li> Run `vagrant status` inside the `vagrant` folder to retrieve hostnames </li>
-       </ol>
+           1. Download Vagrant and Virtualbox for your OS </li>
+           2. Run `deployment/vagrant/recreate.sh` </li>
+           3. If not yet the case, add `Include config.d/*` as the FIRST line into ~/.ssh/config </li>
+           4. Run `deployment/ansible/run.sh vagrant` to populate the VMs </li>
+           5. Run `vagrant status` inside the `vagrant` folder to retrieve hostnames </li>
+
           Note: 
        <ul>
            <li> To check that VMs are installed properly, connect to one of them using for example: `ssh idcons-db1` </li>
            <li> Use `vagrant up` to turn on the installed VMs. </li>
        </ul> 
-       [Previous](#step1_maven) | [Back to contents](#table-of-contents)  
-      </div>
-   </div>
- 
-   <div id="step3_idea">
-      <a href="#step3_idea" style="color: black;"> <b> Step 3 - IntelliJ IDEA </b> </a>
-      <div>
+       
+          [Previous](#step1_maven) | [Back to contents](#table-of-contents)
+    </details>  
+    
+    <details id="step3_idea" open>
+    <summary> <b> Step 3 - IntelliJ IDEA </b> </summary> 
+
          Navigate to IntelliJ IDEA run config:
+         
          ![image](https://user-images.githubusercontent.com/89839322/131587909-464d89bd-149d-44f1-9501-2749ee1d16a3.png)
+         
         Set VM options:     
          ```
          -Djava.library.path=./lib/native
@@ -182,62 +160,60 @@ NOTES:
          ```
          dev
          ```
-       as shown in 
-       ![image](https://user-images.githubusercontent.com/89839322/131588402-545653c0-d79d-491e-8423-c4506a9aa324.png)
-        [Previous](#databases) | [Back to contents](#table-of-contents)     
-      </div>
-   </div> 
- 
-   <div id="step4_build">
-      <a href="#step4_build" style="color: black;"> <b> Step 4 - Build </b> </a>
-      <div>
-       Build the application by running:
+       as shown in ![image](https://user-images.githubusercontent.com/89839322/131588402-545653c0-d79d-491e-8423-c4506a9aa324.png)   
+
+        [Previous](#step2_mongo) | [Back to contents](#table-of-contents)   
+
+    </details>      
+
+    <details id="step4_build" open>
+    <summary> <b> Step 4 - Build </b> </summary> 
+
+        Build the application by running:
         ```
         ./build.sh
         ```
        Tap into the application by running it via GUI
+       
        ![image](https://user-images.githubusercontent.com/89839322/131589340-c2705e13-6a40-44d7-bf9d-4839b079d185.png)
+       
        and by navigating to `https://localhost:8080`.
+       
        You should be able to see the following screen
+       
        ![image](https://user-images.githubusercontent.com/89839322/131589729-d19d00ec-2c96-4a98-8e16-254952c8454d.png)
-       At this point, Mongo DB is empty and should be restored from PRD. Stop the application in IDEA by clicking "stop" button.
-        [Previous](#databases) | [Back to contents](#table-of-contents)     
-      </div>
-   </div> 
+       
+       At this point, Mongo DB is empty and should be restored from PRD. Stop the application in IDEA by clicking "Stop" button. 
+
+       [Previous](#step3_idea) | [Back to contents](#table-of-contents)   
+
+    </details>    
+    
+    <details id="step5_copy_db" open>
+    <summary> <b> Step 5 - Copy DB </b> </summary> 
+
+       1. Run `./docker/axon-restore/get_backup_prod.sh` in order to copy DB (PROD) to local drive.</li>
+       2. Execute `./docker/axon-restore/restore_backup.sh` and follow the provided instructions.</li>   
+       3. Launch `./docker/replay.sh' to replay AxonDB events locally.</li>
+       4. Trigger './docker/admin_disable_2fa.sh' to reset 2FA in order to be able to reset admin password.</li>   
+
+        [Previous](#step4_build) | [Back to contents](#table-of-contents)   
+
+    </details>     
  
-   <div id="step5_copy_db">
-      <a href="#step5_copy_db" style="color: black;"> <b> Step 5 - Copy DB </b> </a>
-      <div>
-      <ol>
-       <li> Run `./docker/axon-restore/get_backup_prod.sh` in order to copy DB (PROD) to local drive.</li>
-       <li> Execute `./docker/axon-restore/restore_backup.sh` and follow the provided instructions.</li>   
-       <li> Launch `./docker/replay.sh' to replay AxonDB events locally.</li>
-       <li> Trigger './docker/admin_disable_2fa.sh' to reset 2FA in order to be able to reset admin password.</li>
-       </ol>
-        [Previous](#databases) | [Back to contents](#table-of-contents)         
-      </div>
-   </div> 
+    <details id="step6_docker" open>
+    <summary> <b> Step 6 - Docker </b> </summary> 
+
+       1. Run `./docker/run.sh wo` to start the container.</li>
+       2. Tap into the application again at `https://localhost:8080` to reset the password for 'admin' user.</li>   
+       3. After reseting the admin password, login to IDCONS admin dashboard and create a new user (or change the password of existing one).</li>  
+       4. You should receive a link for password reset in ocal mailcatcher `http://localhost:1080`</li> 
+       5. You should be able to login under the desired user now.</li>  
+
+        [Previous](#step5_copy_db) | [Back to contents](#table-of-contents)   
+
+    </details>  
  
-   <div id="step6_docker">
-      <a href="#step6_docker" style="color: black;"> <b> Step 6 - Docker </b> </a>
-      <div>
-      <ol>
-       <li> Run `./docker/run.sh wo` to start the container.</li>
-       <li> Tap into the application again at `https://localhost:8080` to reset the password for 'admin' user.</li>   
-       <li> After reseting the admin password, login to IDCONS admin dashboard and create a new user (or change the password of existing one).</li>  
-       <li> You should receive a link for password reset in ocal mailcatcher `http://localhost:1080`</li> 
-       <li> You should be able to login under the desired user now.</li>  
-       </ol>
-        [Previous](#databases) | [Back to contents](#table-of-contents)         
-      </div>
-   </div>  
-  
-</div>
-
-<!-- </details> -->
-
-<!-- </div>  -->
-
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 <div id="debug" class="tab-content" markdown="1">
