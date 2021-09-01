@@ -117,6 +117,7 @@ NOTES:
  
 <p id="running-locally"> <b> Running locally </b> </p>
 
+<pre markdown="1">
     <details id="step1_maven" open>
     <summary> <b> Step 1 - Maven </b> </summary> 
 
@@ -213,7 +214,7 @@ NOTES:
         [Previous](#step5_copy_db) | [Back to contents](#table-of-contents)   
 
     </details>  
- 
+ </pre>
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 <div id="debug" class="tab-content" markdown="1">
