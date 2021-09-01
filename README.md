@@ -23,6 +23,7 @@
 
 <details markdown="1">
 <summary> <b> FAQ </b> </summary>
+
    * [How do I make a change to what is in production?](#how-do-i-make-a-change-to-what-is-in-production)
    * [How do I take something which is already fixed on master (or another source branch) to production without taking along other commits already on master?](#how-do-i-take-something-which-is-already-fixed)
 <!--    * [How to replay events](#how-to-replay-events)
@@ -37,6 +38,7 @@
    * [How to replace Axon snapshot files](#how-to-replace-axon-snapshot-files)
    * [How to update OR-tools](#how-to-update-or-tools)
    * [How to analyse event handling performance](#how-to-analyse-event-handling-performance) -->
+   
  </details>
 
 
