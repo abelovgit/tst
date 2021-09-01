@@ -200,7 +200,7 @@ At this point, Mongo DB is empty and should be restored from PRD. Stop the appli
 
 1. Run `./docker/axon-restore/get_backup_prod.sh` in order to copy DB (PROD) to local drive
 2. Execute `./docker/axon-restore/restore_backup.sh` and follow the provided instructions 
-3. Launch `./docker/replay.sh' to replay AxonDB events locally
+3. Launch `./docker/replay.sh` to replay AxonDB events locally
 4. Trigger `./docker/admin_disable_2fa.sh` to reset 2FA in order to be able to reset admin password
 
 [Previous](#step4_build) | [Back to contents](#table-of-contents)   
