@@ -105,7 +105,7 @@ For Mongo Acceptance, set up the tunnel, go to the link and use user 'idcons_ro'
 
 NOTES: 
 * Credentials can be found on https://pwsafe.trifork.nl
-* Establish the SSH tunnel before attempting to visit the prescribed ports on localhost
+* Establish the SSH tunnel before attempting to visit the prescribed ports on localhost.
 
 [Previous](#environments) | [Back to contents](#table-of-contents)
 
@@ -114,10 +114,10 @@ NOTES:
 </div>
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<!-- <div id="running-locally">  -->
 
 ### Running locally
 
+<!-- +++++++++++++++++++++++Step 1++++++++++++++++++++++++++++++ -->
 <details open id="step1_maven">
 <summary> <b> Step 1 - Configure Maven </b> </summary> 
 
@@ -127,15 +127,16 @@ In the local repository, run `./lib/install.sh` in order to install a missing de
 
 </details>  
 
+<!-- +++++++++++++++++++++++Step 2++++++++++++++++++++++++++++++ -->
 <details open id="step2_mongo">
 <summary> <b> Step 2 - Setup Mongo DB </b> </summary>    
 
 Setup VMs for Mongo DB cluster locally: <br/>    
-1. Download Vagrant and Virtualbox for your OS <br/>
-2. Run `deployment/vagrant/recreate.sh` <br/>
-3. If not yet the case, add `Include config.d/*` as the FIRST line into `~/.ssh/config <br/>
-4. Run `deployment/ansible/run.sh vagrant` to populate the VMs <br/>
-5. Run `vagrant status` inside the `vagrant` folder to retrieve hostnames <br/>
+1. Download Vagrant and Virtualbox for your OS. <br/>
+2. Run `deployment/vagrant/recreate.sh`. <br/>
+3. If not yet the case, add `Include config.d/*` as the FIRST line into `~/.ssh/config`. <br/>
+4. Run `deployment/ansible/run.sh vagrant` to populate the VMs. <br/>
+5. Run `vagrant status` inside the `vagrant` folder to retrieve hostnames. <br/>
 
 Note: 
 * To check that VMs are installed properly, connect to one of them using for example: `ssh idcons-db1` <br/>
@@ -143,8 +144,9 @@ Note:
        
  [Previous](#step1_maven) | [Back to contents](#table-of-contents)
           
-</details>  
-    
+</details> 
+
+<!-- +++++++++++++++++++++++Step 3++++++++++++++++++++++++++++++ -->
 <details id="step3_idea" open>
 <summary> <b> Step 3 - Configure IntelliJ IDEA </b> </summary> 
 
@@ -166,6 +168,7 @@ as shown in ![image](https://user-images.githubusercontent.com/89839322/13158840
 
 </details>   
 
+<!-- +++++++++++++++++++++++Step 4++++++++++++++++++++++++++++++ -->
 <details id="step4_build" open>
 <summary> <b> Step 4 - Build application </b> </summary> 
 
@@ -179,7 +182,7 @@ Tap into the application by running it via GUI
        
 and by navigating to `https://localhost:8080`.
        
-You should be able to see the following screen
+You should be able to see the following screen:
        
 ![image](https://user-images.githubusercontent.com/89839322/131589729-d19d00ec-2c96-4a98-8e16-254952c8454d.png)
        
@@ -187,28 +190,30 @@ At this point, Mongo DB is empty and should be restored from PRD. Stop the appli
 
 [Previous](#step3_idea) | [Back to contents](#table-of-contents)   
 
-</details>    
-    
+</details> 
+
+<!-- +++++++++++++++++++++++Step 5++++++++++++++++++++++++++++++ -->    
 <details id="step5_copy_db" open>
 <summary> <b> Step 5 - Copy Axon DB </b> </summary> 
 
-1. Run `./docker/axon-restore/get_backup_prod.sh` in order to copy DB (PROD) to local drive.</li>
-2. Execute `./docker/axon-restore/restore_backup.sh` and follow the provided instructions.</li>   
-3. Launch `./docker/replay.sh' to replay AxonDB events locally.</li>
-4. Trigger `./docker/admin_disable_2fa.sh` to reset 2FA in order to be able to reset admin password.</li>   
+1. Run `./docker/axon-restore/get_backup_prod.sh` in order to copy DB (PROD) to local drive.
+2. Execute `./docker/axon-restore/restore_backup.sh` and follow the provided instructions.   
+3. Launch `./docker/replay.sh' to replay AxonDB events locally.
+4. Trigger `./docker/admin_disable_2fa.sh` to reset 2FA in order to be able to reset admin password. 
 
 [Previous](#step4_build) | [Back to contents](#table-of-contents)   
 
 </details>     
- 
+
+<!-- +++++++++++++++++++++++Step 6++++++++++++++++++++++++++++++ -->
 <details id="step6_docker" open>
 <summary> <b> Step 6 - Run Docker </b> </summary> 
 
-1. Run `./docker/run.sh wo` to start the containers.</li>
-2. Tap into the application again at `https://localhost:8080` to reset the password for 'admin' user.</li>   
-3. After reseting the admin password, login to IDCONS admin dashboard and create a new user (or change the password of existing one).</li>  
-4. You should receive a link for password reset in the local mailcatcher `http://localhost:1080`</li> 
-5. You should be able to login under the desired user now.</li>  
+1. Run `./docker/run.sh wo` to start the containers.
+2. Tap into the application again at `https://localhost:8080` to reset the password for 'admin' user.
+3. After reseting the admin password, login to IDCONS admin dashboard and create a new user (or change the password of existing one).
+4. You should receive a link for password reset in the local mailcatcher `http://localhost:1080`.
+5. You should be able to login under the desired user now.
 
 [Previous](#step5_copy_db) | [Back to contents](#table-of-contents)   
 
