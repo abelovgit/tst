@@ -6,7 +6,7 @@
 * [Repository Structure](#repository-structure)
 * [Environments](#environments)
 * [Databases](#databases)
-<details>
+<details markdown="1">
 <summary> <a href="#running-locally"> Running locally </a> </summary> 
   
   * [Maven](#step1_maven) 
