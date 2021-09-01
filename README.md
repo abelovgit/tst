@@ -118,7 +118,7 @@ NOTES:
 
 ### Running locally
 
-    <details open id="step1_maven" markdown="1">
+    <details open id="step1_maven">
     <summary markdown="1"> <b> Step 1 - Maven </b> </summary> 
 
         In the local repository, run `./lib/install.sh` in order to install a missing dependency. <br/>
@@ -127,7 +127,7 @@ NOTES:
 
     </details>  
 
-    <details open id="step2_mongo" markdown="1">
+<!--    <details open id="step2_mongo" markdown="1">
     <summary> <b> Step 2 - Setup Mongo DB </b> </summary>    
 
          Setup VMs for Mongo DB cluster locally: <br/>    
@@ -144,7 +144,7 @@ NOTES:
           [Previous](#step1_maven) | [Back to contents](#table-of-contents)
     </details>  
     
-<!--     <details id="step3_idea" open>
+     <details id="step3_idea" open>
     <summary> <b> Step 3 - IntelliJ IDEA </b> </summary> 
 
          Navigate to IntelliJ IDEA run config:
