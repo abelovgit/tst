@@ -40,8 +40,8 @@
  </details>
 
 
-<div id="repository-structure" class="tab-content" markdown="1">
-<details open markdown="1">
+<div id="repository-structure" class="tab-content">
+<details open markdown="0">
 <summary> <b> Repository Structure </b> </summary>
 
 |--application --> contains a web application
