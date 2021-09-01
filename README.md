@@ -81,8 +81,8 @@ For detailed documentation about the environment refer to [Confluence page](http
 | Production  | master (manual) | [APP](https://idcons.nl),[LOGS](https://monitoring.idcons.nl:5601),[METRICS](https://monitoring.idcons.nl:3000/) 
  
 NOTES: 
-* Credentials can be found on [](https://pwsafe.trifork.nl)
-* OTP can be generated at [](https://totp.danhersam.com/)
+* Credentials can be found on https://pwsafe.trifork.nl
+* OTP can be generated at https://totp.danhersam.com/
 
 [Previous](#repository-structure) | [Back to contents](#table-of-contents)
 
