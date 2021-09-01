@@ -8,14 +8,15 @@
 * [Databases](#databases)
 <details>
 <summary> <a href="#running-locally"> Running locally </a> </summary>
- 
-  * [Maven](#step1_maven)
-  * [Using Vagrant](#step2_mongo)
-  * [IDEA](#step3_idea)
+  <ul>
+   <li> <a href="#step1_maven"> Maven </a> </li>
+   <li> <a href="#step2_mongo"> Mongo DB  </a> </li>
+<!--   * [IDEA](#step3_idea)
   * [Command Line](#command-line)
   * [Setup Initial Data](#setup-initial-data)
   * [Docker](#docker)
-  * [Mail service](#mail-service)
+  * [Mail service](#mail-service) -->
+ </ul>
  </details>
 * [Debug](#debug)
 
