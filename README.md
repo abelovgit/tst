@@ -3,10 +3,12 @@
 # idcons rulezzzz
 
 # Table of contents
+<details markdown="1">
+
 * [Repository Structure](#repository-structure)
 * [Environments](#environments)
 * [Databases](#databases)
-<details markdown="1">
+
 <summary> <a href="#running-locally"> Running locally </a> </summary> 
   
   * [Maven](#step1_maven) 
