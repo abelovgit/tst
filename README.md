@@ -119,9 +119,9 @@ NOTES:
 ### Running locally
 
     <details open id="step1_maven">
-    <summary markdown="1"> <b> Step 1 - Maven </b> </summary> 
+    <summary markdown="span"> <b> Step 1 - Maven </b> </summary> 
 
-        In the local repository, run `./lib/install.sh` in order to install a missing dependency. <br/>
+        In the local repository, run `./lib/install.sh` in order to install a missing dependency.
 
         [Previous](#databases) | [Back to contents](#table-of-contents)   
 
