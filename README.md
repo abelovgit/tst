@@ -7,12 +7,10 @@
 * [Environments](#environments)
 * [Databases](#databases)
 <details>
-<summary> <a href="#running-locally"> Running locally </a> </summary>
-  <ul>
-   <li> <a href="#step1_maven"> Maven </a> </li>
-   <li> <a href="#step2_mongo"> Mongo DB  </a> </li>
- </ul>
+<a href="#running-locally"> <summary> Running locally </summary> </a>
   
+  * [Maven](#step1_maven) 
+  * [Mongo DB](#step2_mongo)  
   * [IDEA](#step3_idea)
   * [Command Line](#command-line)
   * [Setup Initial Data](#setup-initial-data)
