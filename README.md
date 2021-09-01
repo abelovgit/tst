@@ -242,7 +242,8 @@ Use the konami code to activate UI debugging: up, up, down, down, left, right, l
 <details open markdown="1">
 <summary> <b> FAQ </b> </summary>
 
-      <details  open id="how-do-i-make-a-change-to-what-is-in-production" markdown="1">
+  <div>
+      <details  open id="how-do-i-make-a-change-to-what-is-in-production">
       <summary> <b> How do I make a change to what is in production? </b> </summary>
 
       1. Check out the commit which is currently in prd: <br/>```git checkout <current_version_in_prd>```<br/>
@@ -255,9 +256,12 @@ Use the konami code to activate UI debugging: up, up, down, down, left, right, l
       4. Run the gitlab pipeline jobs the same way you would for the master branch.
 
       </details>
+        
+  </div>
       
       <!--+++++++++++++++++++++++++++++++++++-->
-      <details  open id="how-do-i-take-something-which-is-already-fixed" markdown="1">
+  <div>
+      <details  open id="how-do-i-take-something-which-is-already-fixed">
       <summary> <b> How do I take something which is already fixed on master (or another source branch) to production without taking along other commits already on master? </b> </summary>
 
       1. Check out the commit which is currently in prd: <br/>```git checkout <current_version_in_prd>```<br/>
@@ -274,7 +278,9 @@ Use the konami code to activate UI debugging: up, up, down, down, left, right, l
 
       Your master branch is now back to normal and your hotfix branch contains only what's in prod plus the changes you hand picked during the rebase.
       
-      </details>      
+      </details>   
+        
+  </div>        
       
        <!--+++++++++++++++++++++++++++++++++++-->
 
