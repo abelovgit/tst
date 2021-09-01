@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://abelovgit.github.io/tst/styles.css" />
+<link rel="stylesheet" href="styles.css" />
 
 # idcons rulezzzz
 
