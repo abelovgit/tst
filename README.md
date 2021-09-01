@@ -21,7 +21,7 @@
  
 * [Debug](#debug)
 
-<details>
+<details markdown="1">
 <summary> <b> FAQ </b> </summary>
    * [How do I make a change to what is in production?](#how-do-i-make-a-change-to-what-is-in-production)
    * [How do I take something which is already fixed on master (or another source branch) to production without taking along other commits already on master?](#how-do-i-take-something-which-is-already-fixed-on-master-or-another-source-branch-to-production-without-taking-along-other-commits-already-on-master)
@@ -207,16 +207,31 @@ NOTES:
        <li> Run `./docker/run.sh wo` to start the container.</li>
        <li> Tap into the application again at `https://localhost:8080` to reset the password for 'admin' user.</li>   
        <li> After reseting the admin password, login to IDCONS admin dashboard and create a new user (or change the password of existing one).</li>  
+       <li> You should receive a link for password reset in ocal mailcatcher `http://localhost:1080`</li> 
        <li> You should be able to login under the desired user now.</li>  
        </ol>
         [Previous](#databases) | [Back to contents](#table-of-contents)         
       </div>
    </div>  
-
-
-</div>
   
+</div>
+
 <!-- </details> -->
 
 <!-- </div>  -->
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<div id="debug" class="tab-content" markdown="1">
+<details open markdown="1">
+<summary> <b> Debug </b> </summary>
+Use the konami code to activate UI debugging: up, up, down, down, left, right, left, right, b, a `https://en.wikipedia.org/wiki/Konami_Code`.
+
+[Previous](#running-locally) | [Back to contents](#table-of-contents)
+
+</details>
+
+</div>
+  
+
 
