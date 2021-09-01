@@ -41,15 +41,15 @@
 
 
 <div id="repository-structure" class="tab-content">
-<details open markdown="0">
+<details open markdown="1">
 <summary> <b> Repository Structure </b> </summary>
 
-|--application --> contains a web application
-|--back-end
-|  |--src
-|  |  |--main
-|  |  |--test
-|  |--target
+|--application --> contains a web application \
+|--back-end \
+|  |--src \
+|  |  |--main \
+|  |  |--test \
+|  |--target \
 |  
 |--client-api
 |--common
