@@ -117,6 +117,8 @@ NOTES:
  
 <p id="running-locally"> <b> Running locally </b> </p>
 
+<div markdown="1">
+
     <details id="step1_maven" open>
     <summary markdown="1"> <b> Step 1 - Maven </b> </summary> 
 
@@ -126,7 +128,7 @@ NOTES:
 
     </details>  
 
-    <details id="step2_mongo" open markdown="1">
+    <details id="step2_mongo" open>
     <summary> <b> Step 2 - Setup Mongo DB </b> </summary>    
 
          Setup VMs for Mongo DB cluster locally: <br/>    
@@ -143,7 +145,7 @@ NOTES:
           [Previous](#step1_maven) | [Back to contents](#table-of-contents)
     </details>  
     
-    <details id="step3_idea" open>
+<!--     <details id="step3_idea" open>
     <summary> <b> Step 3 - IntelliJ IDEA </b> </summary> 
 
          Navigate to IntelliJ IDEA run config:
@@ -210,7 +212,9 @@ NOTES:
 
         [Previous](#step5_copy_db) | [Back to contents](#table-of-contents)   
 
-    </details>  
+    </details>   -->
+    
+</div>    
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
