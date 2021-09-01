@@ -19,9 +19,7 @@
  </details>
  
 * [Debug](#debug)
-
-<details markdown="1">
-<summary> <a href="#faq"> FAQ </a> </summary>
+* <details markdown="1"> <summary> <a href="#faq"> FAQ </a> </summary>
 
    * [How do I make a change to what is in production?](#how-do-i-make-a-change-to-what-is-in-production)
    * [How do I take something which is already fixed on master (or another source branch) to production without taking along other commits already on master?](#how-do-i-take-something-which-is-already-fixed)
