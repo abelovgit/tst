@@ -14,8 +14,7 @@
   * [Command Line](#command-line)
   * [Setup Initial Data](#setup-initial-data)
   * [Docker](#docker)
-  * [Mail service](#mail-service)  
-  
+ 
  </details>
  
 * [Debug](#debug)
@@ -36,8 +35,8 @@
    * [How to replace Axon snapshot files](#how-to-replace-axon-snapshot-files)
    * [How to update OR-tools](#how-to-update-or-tools)
    * [How to analyse event handling performance](#how-to-analyse-event-handling-performance) -->
-   
  </details>
+ 
 
 
 <div id="repository-structure" class="tab-content">
