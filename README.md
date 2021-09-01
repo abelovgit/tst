@@ -117,8 +117,8 @@ NOTES:
  
 <p id="running-locally"> <b> Running locally </b> </p>
 
-    <details id="step1_maven" open markdown="1">
-    <summary> <b> Step 1 - Maven </b> </summary> 
+    <details id="step1_maven" open>
+    <summary markdown="1"> <b> Step 1 - Maven </b> </summary> 
 
         In the local repository, run `./lib/install.sh` in order to install a missing dependency. <br/>
 
