@@ -96,8 +96,10 @@ NOTES:
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <div id="running-locally" class="tab-content">
-<details open>
-<summary> <b> Running locally </b> </summary> 
+<!-- <details open>
+<summary> <b> Running locally </b> </summary>  -->
+  
+  <p> <b> Running locally </b> </p>
  
 <!-- <div class="tabbed-area adjacent" markdown="1">
    <div id="box-thirteen" markdown="1">
@@ -213,7 +215,8 @@ NOTES:
 
 
 </div>
-</details>
+  
+<!-- </details> -->
 
 </div> 
 
