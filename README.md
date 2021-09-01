@@ -117,31 +117,28 @@ NOTES:
  
 <p id="running-locally"> <b> Running locally </b> </p>
 
-<pre markdown="1">
-    <details id="step1_maven" open>
+    <details id="step1_maven" open markdown="1">
     <summary> <b> Step 1 - Maven </b> </summary> 
 
-        In the local repository, run `./lib/install.sh` in order to install a missing dependency.
+        In the local repository, run `./lib/install.sh` in order to install a missing dependency. <br/>
 
         [Previous](#databases) | [Back to contents](#table-of-contents)   
 
     </details>  
 
-    <details id="step2_mongo" open>
+    <details id="step2_mongo" open markdown="1">
     <summary> <b> Step 2 - Setup Mongo DB </b> </summary>    
 
-         Setup VMs for Mongo DB cluster locally:     
-           1. Download Vagrant and Virtualbox for your OS </li>
-           2. Run `deployment/vagrant/recreate.sh` </li>
-           3. If not yet the case, add `Include config.d/*` as the FIRST line into ~/.ssh/config </li>
-           4. Run `deployment/ansible/run.sh vagrant` to populate the VMs </li>
-           5. Run `vagrant status` inside the `vagrant` folder to retrieve hostnames </li>
+         Setup VMs for Mongo DB cluster locally: <br/>    
+           1. Download Vagrant and Virtualbox for your OS <br/>
+           2. Run `deployment/vagrant/recreate.sh` <br/>
+           3. If not yet the case, add `Include config.d/*` as the FIRST line into ~/.ssh/config <br/>
+           4. Run `deployment/ansible/run.sh vagrant` to populate the VMs <br/>
+           5. Run `vagrant status` inside the `vagrant` folder to retrieve hostnames <br/>
 
           Note: 
-       <ul>
-           <li> To check that VMs are installed properly, connect to one of them using for example: `ssh idcons-db1` </li>
-           <li> Use `vagrant up` to turn on the installed VMs. </li>
-       </ul> 
+           * To check that VMs are installed properly, connect to one of them using for example: `ssh idcons-db1` </li>
+           * Use `vagrant up` to turn on the installed VMs. </li>
        
           [Previous](#step1_maven) | [Back to contents](#table-of-contents)
     </details>  
@@ -214,7 +211,7 @@ NOTES:
         [Previous](#step5_copy_db) | [Back to contents](#table-of-contents)   
 
     </details>  
- </pre>
+
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
 <div id="debug" class="tab-content" markdown="1">
