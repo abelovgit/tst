@@ -7,7 +7,7 @@
 * [Environments](#environments)
 * [Databases](#databases)
 <details>
-<summary> <b> <a href="#running-locally"> Running locally </a> </b> </summary>
+<summary> <a href="#running-locally"> Running locally </a> </summary>
  
   * [Maven](#step1_maven)
   * [Using Vagrant](#step2_mongo)
