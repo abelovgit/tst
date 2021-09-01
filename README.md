@@ -24,8 +24,8 @@
 <details markdown="1">
 <summary> <b> FAQ </b> </summary>
    * [How do I make a change to what is in production?](#how-do-i-make-a-change-to-what-is-in-production)
-   * [How do I take something which is already fixed on master (or another source branch) to production without taking along other commits already on master?](#how-do-i-take-something-which-is-already-fixed-on-master-or-another-source-branch-to-production-without-taking-along-other-commits-already-on-master)
-   * [How to replay events](#how-to-replay-events)
+   * [How do I take something which is already fixed on master (or another source branch) to production without taking along other commits already on master?](#how-do-i-take-something-which-is-already-fixed)
+<!--    * [How to replay events](#how-to-replay-events)
    * [How to generate ETPA orders in ACC environment](#how-to-generate-etpa-orders-in-acc-environment)
    * [How to apply a quick fix in the NGINX config](#how-to-apply-a-quick-fix-in-the-nginx-config)
    * [How to copy data from ACC or PROD to your local laptop](#how-to-copy-data-from-acc-or-prod-to-your-local-laptop)
@@ -36,7 +36,7 @@
    * [How to replace client facing certificates from external certificate authority](#how-to-replace-client-facing-certificates-from-external-certificate-authority)
    * [How to replace Axon snapshot files](#how-to-replace-axon-snapshot-files)
    * [How to update OR-tools](#how-to-update-or-tools)
-   * [How to analyse event handling performance](#how-to-analyse-event-handling-performance)
+   * [How to analyse event handling performance](#how-to-analyse-event-handling-performance) -->
  </details>
 
 
@@ -232,6 +232,51 @@ Use the konami code to activate UI debugging: up, up, down, down, left, right, l
 </details>
 
 </div>
-  
 
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
+<div id="faq" class="tab-content" markdown="1">
+<details open markdown="1">
+<summary> <b> FAQ </b> </summary>
+
+      <details  open id="how-do-i-make-a-change-to-what-is-in-production" markdown="1">
+      <summary> <b> How do I make a change to what is in production? </b> </summary>
+
+      1. Check out the commit which is currently in prd: <br/>```git checkout <current_version_in_prd>```<br/>
+      2. Make a branch of it starting with "HOTFIX-": <br/>```git checkout -b HOTFIX-<name>```<br/>
+      3. Make, commit and push your changes:<br/>
+      ```<make changes>```<br/>
+      ```git add -A```<br/>
+      ```git commit```<br/>
+      ```git push```<br/>
+      4. Run the gitlab pipeline jobs the same way you would for the master branch.
+
+      </details>
+      
+      <!--+++++++++++++++++++++++++++++++++++-->
+      <details  open id="how-do-i-take-something-which-is-already-fixed" markdown="1">
+      <summary> <b> How do I take something which is already fixed on master (or another source branch) to production without taking along other commits already on master? </b> </summary>
+
+      1. Check out the commit which is currently in prd: <br/>```git checkout <current_version_in_prd>```<br/>
+      2. Make a branch of it: <br/>```git checkout -b HOTFIX-<name>```<br/>
+      3. Go to your source branch (let's assume master from here on out): <br/>```git checkout master```<br/>
+      4. Interactively rebase onto the version currently in prd: <br/>```git rebase -i HOTFIX-<name>```<br/>
+      5. Now delete all but the changes you want to take to prod (or pick something like "skip" if you're doing it in an IDE).
+      6. Complete the rebase. You now have a diverged version of master which can not be pushed, but can be used to merge locally.
+      7. Go back to your hotfix branch:<br/>
+      `git checkout HOTFIX-<name>`
+      8. Merge in your special version of master <br/>```git merge master```<br/> (note that it's NOT origin/master, just master)<br/>
+      9. Push your hotfix branch: <br/>```git push```<br/>
+      10. Go back and fix your diverged master: <br/>```git checkout master```<br/> and <br/>```git reset --hard origin/master```<br/>
+
+      Your master branch is now back to normal and your hotfix branch contains only what's in prod plus the changes you hand picked during the rebase.
+      
+      </details>      
+      
+       <!--+++++++++++++++++++++++++++++++++++-->
+
+[Previous](#debug) | [Back to contents](#table-of-contents)
+
+</details>
+
+</div>
