@@ -95,7 +95,7 @@ NOTES:
 </div>
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div id="running-locally" class="tab-content">
+<!-- <div id="running-locally" class="tab-content"> -->
 <!-- <details open>
 <summary> <b> Running locally </b> </summary>  -->
   
@@ -218,5 +218,5 @@ NOTES:
   
 <!-- </details> -->
 
-</div> 
+<!-- </div>  -->
 
