@@ -111,11 +111,6 @@ NOTES:
    </ul>
 </div> -->
  
-</details>
-
-</div>
-
-
 
 <div class="w3c">
    <div id="step1_maven">
@@ -210,4 +205,7 @@ NOTES:
 
 
 </div>
+</details>
+
+</div> 
 
