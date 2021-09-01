@@ -130,87 +130,87 @@ In the local repository, run `./lib/install.sh` in order to install a missing de
 <details open id="step2_mongo">
 <summary> <b> Step 2 - Setup Mongo DB </b> </summary>    
 
-         Setup VMs for Mongo DB cluster locally: <br/>    
-           1. Download Vagrant and Virtualbox for your OS <br/>
-           2. Run `deployment/vagrant/recreate.sh` <br/>
-           3. If not yet the case, add `Include config.d/*` as the FIRST line into `~/.ssh/config <br/>
-           4. Run `deployment/ansible/run.sh vagrant` to populate the VMs <br/>
-           5. Run `vagrant status` inside the `vagrant` folder to retrieve hostnames <br/>
+Setup VMs for Mongo DB cluster locally: <br/>    
+1. Download Vagrant and Virtualbox for your OS <br/>
+2. Run `deployment/vagrant/recreate.sh` <br/>
+3. If not yet the case, add `Include config.d/*` as the FIRST line into `~/.ssh/config <br/>
+4. Run `deployment/ansible/run.sh vagrant` to populate the VMs <br/>
+5. Run `vagrant status` inside the `vagrant` folder to retrieve hostnames <br/>
 
-          Note: 
-           * To check that VMs are installed properly, connect to one of them using for example: `ssh idcons-db1` <br/>
-           * Use `vagrant up` to turn on the installed VMs <br/>
+Note: 
+* To check that VMs are installed properly, connect to one of them using for example: `ssh idcons-db1` <br/>
+* Use `vagrant up` to turn on the installed VMs <br/>
        
-          [Previous](#step1_maven) | [Back to contents](#table-of-contents)
+ [Previous](#step1_maven) | [Back to contents](#table-of-contents)
           
 </details>  
     
 <details id="step3_idea" open>
 <summary> <b> Step 3 - IntelliJ IDEA </b> </summary> 
 
-        Navigate to IntelliJ IDEA run config:
+Navigate to IntelliJ IDEA run config:
          
-         ![image](https://user-images.githubusercontent.com/89839322/131587909-464d89bd-149d-44f1-9501-2749ee1d16a3.png)
+![image](https://user-images.githubusercontent.com/89839322/131587909-464d89bd-149d-44f1-9501-2749ee1d16a3.png)
          
-        Set VM options:     
-         ```
-         -Djava.library.path=./lib/native
-         ```
-         Set the following to the active profiles:
-         ```
-         dev
-         ```
-       as shown in ![image](https://user-images.githubusercontent.com/89839322/131588402-545653c0-d79d-491e-8423-c4506a9aa324.png)   
+Set VM options:     
+```
+-Djava.library.path=./lib/native
+```
+ Set the following to the active profiles:
+```
+dev
+```
+as shown in ![image](https://user-images.githubusercontent.com/89839322/131588402-545653c0-d79d-491e-8423-c4506a9aa324.png)   
 
-        [Previous](#step2_mongo) | [Back to contents](#table-of-contents)   
+[Previous](#step2_mongo) | [Back to contents](#table-of-contents)   
 
-</details>      
+</details>   
 
 <details id="step4_build" open>
 <summary> <b> Step 4 - Build </b> </summary> 
 
-        Build the application by running:
-        ```
-        ./build.sh
-        ```
-       Tap into the application by running it via GUI
+Build the application by running:
+```
+./build.sh
+```
+Tap into the application by running it via GUI
        
-       ![image](https://user-images.githubusercontent.com/89839322/131589340-c2705e13-6a40-44d7-bf9d-4839b079d185.png)
+![image](https://user-images.githubusercontent.com/89839322/131589340-c2705e13-6a40-44d7-bf9d-4839b079d185.png)
        
-       and by navigating to `https://localhost:8080`.
+and by navigating to `https://localhost:8080`.
        
-       You should be able to see the following screen
+You should be able to see the following screen
        
-       ![image](https://user-images.githubusercontent.com/89839322/131589729-d19d00ec-2c96-4a98-8e16-254952c8454d.png)
+![image](https://user-images.githubusercontent.com/89839322/131589729-d19d00ec-2c96-4a98-8e16-254952c8454d.png)
        
-       At this point, Mongo DB is empty and should be restored from PRD. Stop the application in IDEA by clicking "Stop" button. 
+At this point, Mongo DB is empty and should be restored from PRD. Stop the application in IDEA by clicking "Stop" button. 
 
-       [Previous](#step3_idea) | [Back to contents](#table-of-contents)   
+[Previous](#step3_idea) | [Back to contents](#table-of-contents)   
 
 </details>    
     
 <details id="step5_copy_db" open>
 <summary> <b> Step 5 - Copy DB </b> </summary> 
 
-       1. Run `./docker/axon-restore/get_backup_prod.sh` in order to copy DB (PROD) to local drive.</li>
-       2. Execute `./docker/axon-restore/restore_backup.sh` and follow the provided instructions.</li>   
-       3. Launch `./docker/replay.sh' to replay AxonDB events locally.</li>
-       4. Trigger './docker/admin_disable_2fa.sh' to reset 2FA in order to be able to reset admin password.</li>   
+1. Run `./docker/axon-restore/get_backup_prod.sh` in order to copy DB (PROD) to local drive.</li>
+2. Execute `./docker/axon-restore/restore_backup.sh` and follow the provided instructions.</li>   
+3. Launch `./docker/replay.sh' to replay AxonDB events locally.</li>
+4. Trigger './docker/admin_disable_2fa.sh' to reset 2FA in order to be able to reset admin password.</li>   
 
-        [Previous](#step4_build) | [Back to contents](#table-of-contents)   
+[Previous](#step4_build) | [Back to contents](#table-of-contents)   
 
 </details>     
  
 <details id="step6_docker" open>
 <summary> <b> Step 6 - Docker </b> </summary> 
 
-       1. Run `./docker/run.sh wo` to start the container.</li>
-       2. Tap into the application again at `https://localhost:8080` to reset the password for 'admin' user.</li>   
-       3. After reseting the admin password, login to IDCONS admin dashboard and create a new user (or change the password of existing one).</li>  
-       4. You should receive a link for password reset in ocal mailcatcher `http://localhost:1080`</li> 
-       5. You should be able to login under the desired user now.</li>  
+1. Run `./docker/run.sh wo` to start the container.</li>
+2. Tap into the application again at `https://localhost:8080` to reset the password for 'admin' user.</li>   
+3. After reseting the admin password, login to IDCONS admin dashboard and create a new user (or change the password of existing one).</li>  
+4. You should receive a link for password reset in ocal mailcatcher `http://localhost:1080`</li> 
+5. You should be able to login under the desired user now.</li>  
 
-        [Previous](#step5_copy_db) | [Back to contents](#table-of-contents)   
+[Previous](#step5_copy_db) | [Back to contents](#table-of-contents)   
 
 </details>
     
