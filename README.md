@@ -44,6 +44,8 @@
 <details open markdown="1">
 <summary> <b> Repository Structure </b> </summary>
 
+<pre>
+  
 |--application --> contains a web application \
 |--back-end \
 |  |--src \
@@ -69,6 +71,8 @@
 |  |--target
 |--lib
 |--reporting
+
+</pre>
 
 [Back to contents](#table-of-contents)
 
