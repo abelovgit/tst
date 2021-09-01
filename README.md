@@ -46,12 +46,12 @@
 
 <pre>
   
-|--application --> contains a web application \
-|--back-end \
-|  |--src \
-|  |  |--main \
-|  |  |--test \
-|  |--target \
+|--application --> contains a web application
+|--back-end
+|  |--src
+|  |  |--main
+|  |  |--test
+|  |--target
 |  
 |--client-api
 |--common
