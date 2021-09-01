@@ -8,12 +8,12 @@
 * [Databases](#databases)
 * <details markdown="1"> <summary> <a href="#running-locally"> Running locally </a> </summary> 
   
-  * [Maven](#step1_maven) 
-  * [Mongo DB](#step2_mongo)  
-  * [IDEA](#step3_idea)
-  * [Command Line](#command-line)
-  * [Setup Initial Data](#setup-initial-data)
-  * [Docker](#docker)
+  * [Step 1 - Configure Maven](#step1_maven) 
+  * [Step 2 - Setup Mongo DB](#step2_mongo)  
+  * [Step 3 - Configure IntelliJ IDEA](#step3_idea)
+  * [Step 4 - Build application](#step4_build)
+  * [Step 5 - Copy Axon DB](#step5_copy_db)
+  * [Step 6 - Run Docker](#step6_docker)
  
  </details>
  
@@ -119,7 +119,7 @@ NOTES:
 ### Running locally
 
 <details open id="step1_maven">
-<summary> <b> Step 1 - Maven </b> </summary> 
+<summary> <b> Step 1 - Configure Maven </b> </summary> 
 
 In the local repository, run `./lib/install.sh` in order to install a missing dependency.
 
@@ -146,7 +146,7 @@ Note:
 </details>  
     
 <details id="step3_idea" open>
-<summary> <b> Step 3 - IntelliJ IDEA </b> </summary> 
+<summary> <b> Step 3 - Configure IntelliJ IDEA </b> </summary> 
 
 Navigate to IntelliJ IDEA run config:
          
@@ -167,7 +167,7 @@ as shown in ![image](https://user-images.githubusercontent.com/89839322/13158840
 </details>   
 
 <details id="step4_build" open>
-<summary> <b> Step 4 - Build </b> </summary> 
+<summary> <b> Step 4 - Build application </b> </summary> 
 
 Build the application by running:
 ```
@@ -190,24 +190,24 @@ At this point, Mongo DB is empty and should be restored from PRD. Stop the appli
 </details>    
     
 <details id="step5_copy_db" open>
-<summary> <b> Step 5 - Copy DB </b> </summary> 
+<summary> <b> Step 5 - Copy Axon DB </b> </summary> 
 
 1. Run `./docker/axon-restore/get_backup_prod.sh` in order to copy DB (PROD) to local drive.</li>
 2. Execute `./docker/axon-restore/restore_backup.sh` and follow the provided instructions.</li>   
 3. Launch `./docker/replay.sh' to replay AxonDB events locally.</li>
-4. Trigger './docker/admin_disable_2fa.sh' to reset 2FA in order to be able to reset admin password.</li>   
+4. Trigger `./docker/admin_disable_2fa.sh` to reset 2FA in order to be able to reset admin password.</li>   
 
 [Previous](#step4_build) | [Back to contents](#table-of-contents)   
 
 </details>     
  
 <details id="step6_docker" open>
-<summary> <b> Step 6 - Docker </b> </summary> 
+<summary> <b> Step 6 - Run Docker </b> </summary> 
 
-1. Run `./docker/run.sh wo` to start the container.</li>
+1. Run `./docker/run.sh wo` to start the containers.</li>
 2. Tap into the application again at `https://localhost:8080` to reset the password for 'admin' user.</li>   
 3. After reseting the admin password, login to IDCONS admin dashboard and create a new user (or change the password of existing one).</li>  
-4. You should receive a link for password reset in ocal mailcatcher `http://localhost:1080`</li> 
+4. You should receive a link for password reset in the local mailcatcher `http://localhost:1080`</li> 
 5. You should be able to login under the desired user now.</li>  
 
 [Previous](#step5_copy_db) | [Back to contents](#table-of-contents)   
@@ -217,9 +217,10 @@ At this point, Mongo DB is empty and should be restored from PRD. Stop the appli
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-<div id="debug" class="tab-content" markdown="1">
+<div id="debug" class="tab-content">
 <details open markdown="1">
 <summary> <b> Debug </b> </summary>
+  
 Use the konami code to activate UI debugging: up, up, down, down, left, right, left, right, b, a `https://en.wikipedia.org/wiki/Konami_Code`.
 
 [Previous](#running-locally) | [Back to contents](#table-of-contents)
