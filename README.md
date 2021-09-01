@@ -91,7 +91,7 @@ NOTES:
 </div>
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div id="databases" class="tab-content" markdown="1">
+<div id="databases" class="tab-content">
 <details open markdown="1">
 <summary> <b> Databases </b> </summary>
 
@@ -114,12 +114,12 @@ NOTES:
 </div>
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div id="running-locally" markdown="1"> 
+<div id="running-locally"> 
 
 ### Running locally
 
     <details open id="step1_maven">
-    <summary markdown="span"> <b> Step 1 - Maven </b> </summary> 
+    <summary> <b> Step 1 - Maven </b> </summary> 
 
         In the local repository, run `./lib/install.sh` in order to install a missing dependency.
 
