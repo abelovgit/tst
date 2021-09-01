@@ -44,6 +44,32 @@
 <details open markdown="1">
 <summary> <b> Repository Structure </b> </summary>
 
+|--application --> contains a web application
+|--back-end
+|  |--src
+|  |  |--main
+|  |  |--test
+|  |--target
+|  
+|--client-api
+|--common
+|--deployment
+|--docker
+|  |--axon-restore
+|  |--axondb
+|  |--ssl
+|
+|--docs
+|--etpa-client
+|--exceptions
+|--front-end
+|  |--src
+|  |  |--main
+|  |  |--test
+|  |--target
+|--lib
+|--reporting
+
 [Back to contents](#table-of-contents)
 
 </details>
