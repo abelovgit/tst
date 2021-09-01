@@ -127,27 +127,28 @@ In the local repository, run `./lib/install.sh` in order to install a missing de
 
 </details>  
 
-<!--    <details open id="step2_mongo" markdown="1">
-    <summary> <b> Step 2 - Setup Mongo DB </b> </summary>    
+<details open id="step2_mongo">
+<summary> <b> Step 2 - Setup Mongo DB </b> </summary>    
 
          Setup VMs for Mongo DB cluster locally: <br/>    
            1. Download Vagrant and Virtualbox for your OS <br/>
            2. Run `deployment/vagrant/recreate.sh` <br/>
-           3. If not yet the case, add `Include config.d/*` as the FIRST line into ~/.ssh/config <br/>
+           3. If not yet the case, add `Include config.d/*` as the FIRST line into `~/.ssh/config <br/>
            4. Run `deployment/ansible/run.sh vagrant` to populate the VMs <br/>
            5. Run `vagrant status` inside the `vagrant` folder to retrieve hostnames <br/>
 
           Note: 
-           * To check that VMs are installed properly, connect to one of them using for example: `ssh idcons-db1` </li>
-           * Use `vagrant up` to turn on the installed VMs. </li>
+           * To check that VMs are installed properly, connect to one of them using for example: `ssh idcons-db1` <br/>
+           * Use `vagrant up` to turn on the installed VMs <br/>
        
           [Previous](#step1_maven) | [Back to contents](#table-of-contents)
-    </details>  
+          
+</details>  
     
-     <details id="step3_idea" open>
-    <summary> <b> Step 3 - IntelliJ IDEA </b> </summary> 
+<details id="step3_idea" open>
+<summary> <b> Step 3 - IntelliJ IDEA </b> </summary> 
 
-         Navigate to IntelliJ IDEA run config:
+        Navigate to IntelliJ IDEA run config:
          
          ![image](https://user-images.githubusercontent.com/89839322/131587909-464d89bd-149d-44f1-9501-2749ee1d16a3.png)
          
@@ -163,10 +164,10 @@ In the local repository, run `./lib/install.sh` in order to install a missing de
 
         [Previous](#step2_mongo) | [Back to contents](#table-of-contents)   
 
-    </details>      
+</details>      
 
-    <details id="step4_build" open>
-    <summary> <b> Step 4 - Build </b> </summary> 
+<details id="step4_build" open>
+<summary> <b> Step 4 - Build </b> </summary> 
 
         Build the application by running:
         ```
@@ -186,10 +187,10 @@ In the local repository, run `./lib/install.sh` in order to install a missing de
 
        [Previous](#step3_idea) | [Back to contents](#table-of-contents)   
 
-    </details>    
+</details>    
     
-    <details id="step5_copy_db" open>
-    <summary> <b> Step 5 - Copy DB </b> </summary> 
+<details id="step5_copy_db" open>
+<summary> <b> Step 5 - Copy DB </b> </summary> 
 
        1. Run `./docker/axon-restore/get_backup_prod.sh` in order to copy DB (PROD) to local drive.</li>
        2. Execute `./docker/axon-restore/restore_backup.sh` and follow the provided instructions.</li>   
@@ -198,10 +199,10 @@ In the local repository, run `./lib/install.sh` in order to install a missing de
 
         [Previous](#step4_build) | [Back to contents](#table-of-contents)   
 
-    </details>     
+</details>     
  
-    <details id="step6_docker" open>
-    <summary> <b> Step 6 - Docker </b> </summary> 
+<details id="step6_docker" open>
+<summary> <b> Step 6 - Docker </b> </summary> 
 
        1. Run `./docker/run.sh wo` to start the container.</li>
        2. Tap into the application again at `https://localhost:8080` to reset the password for 'admin' user.</li>   
@@ -211,9 +212,8 @@ In the local repository, run `./lib/install.sh` in order to install a missing de
 
         [Previous](#step5_copy_db) | [Back to contents](#table-of-contents)   
 
-    </details>   -->
+</details>
     
-<!-- </div>     -->
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
