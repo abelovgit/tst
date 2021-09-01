@@ -43,33 +43,22 @@
 <details open markdown="1">
 <summary> <b> Repository Structure </b> </summary>
 
+Important elements of the repository are explained bellow:
 <pre>
-  
-|--application --> contains a web application
-|--back-end
-|  |--src
-|  |  |--main
-|  |  |--test
-|  |--target
-|  
-|--client-api
-|--common
-|--deployment
-|--docker
-|  |--axon-restore
-|  |--axondb
-|  |--ssl
+|--pom.xml     --> configuration of modules and dependencies
+|--application --> responsible for creation of Spring Boot WebApplication
+|--back-end    --> back-end part of the application
+|--client-api  --> classes for communication with trading platform(s)
+|--common      --> libraries shared by multiple projects
+|--deployment  --> tools and configs for local deployment of the application
+|--docker      
+|  |--axon-restore --> scripts for copying AxonDB and its local restoration 
+|  |--axondb       --> 
 |
-|--docs
-|--etpa-client
-|--exceptions
-|--front-end
-|  |--src
-|  |  |--main
-|  |  |--test
-|  |--target
-|--lib
-|--reporting
+|--docs        --> documentation
+|--etpa-client --> classes specific for ETPA trading platform 
+|--front-end   --> javascript front-end of the application
+|--lib         --> package with `oortools` optimization solver
 
 </pre>
 
