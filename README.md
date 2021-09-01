@@ -6,9 +6,7 @@
 * [Repository Structure](#repository-structure)
 * [Environments](#environments)
 * [Databases](#databases)
-* 
-<details markdown="1">
-<summary> <a href="#running-locally"> Running locally </a> </summary> 
+* <details markdown="1"> <summary> <a href="#running-locally"> Running locally </a> </summary> 
   
   * [Maven](#step1_maven) 
   * [Mongo DB](#step2_mongo)  
