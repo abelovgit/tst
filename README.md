@@ -242,7 +242,7 @@ Use the konami code to activate UI debugging: up, up, down, down, left, right, l
 <details open markdown="1">
 <summary> <b> FAQ </b> </summary>
 
-  <div>
+  <div style="margin: 10px;">
       <details  open id="how-do-i-make-a-change-to-what-is-in-production">
       <summary> <b> How do I make a change to what is in production? </b> </summary>
 
@@ -260,7 +260,7 @@ Use the konami code to activate UI debugging: up, up, down, down, left, right, l
   </div>
       
       <!--+++++++++++++++++++++++++++++++++++-->
-  <div>
+  <div style="margin: 10px;">
       <details  open id="how-do-i-take-something-which-is-already-fixed">
       <summary> <b> How do I take something which is already fixed on master (or another source branch) to production without taking along other commits already on master? </b> </summary>
 
