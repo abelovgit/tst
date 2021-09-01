@@ -118,14 +118,14 @@ NOTES:
 
 ### Running locally
 
-    <details open id="step1_maven">
-    <summary> <b> Step 1 - Maven </b> </summary> 
+<details open id="step1_maven">
+<summary> <b> Step 1 - Maven </b> </summary> 
 
-        In the local repository, run `./lib/install.sh` in order to install a missing dependency.
+In the local repository, run `./lib/install.sh` in order to install a missing dependency.
 
-        [Previous](#databases) | [Back to contents](#table-of-contents)   
+[Previous](#databases) | [Back to contents](#table-of-contents)   
 
-    </details>  
+</details>  
 
 <!--    <details open id="step2_mongo" markdown="1">
     <summary> <b> Step 2 - Setup Mongo DB </b> </summary>    
