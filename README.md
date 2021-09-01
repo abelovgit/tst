@@ -11,13 +11,16 @@
   <ul>
    <li> <a href="#step1_maven"> Maven </a> </li>
    <li> <a href="#step2_mongo"> Mongo DB  </a> </li>
-<!--   * [IDEA](#step3_idea)
+ </ul>
+  
+  * [IDEA](#step3_idea)
   * [Command Line](#command-line)
   * [Setup Initial Data](#setup-initial-data)
   * [Docker](#docker)
-  * [Mail service](#mail-service) -->
- </ul>
+  * [Mail service](#mail-service)  
+  
  </details>
+ 
 * [Debug](#debug)
 
 <details>
